@@ -6,8 +6,8 @@ Base HTTP client — all API models use this to make authenticated requests.
 import logging
 import requests
 from typing import Optional
-from config import BASE_URL
-from utils.auth import get_token
+from settings import BASE_URL
+from auth import get_token
 
 logger = logging.getLogger(__name__)
 

@@ -5,15 +5,15 @@ Docs: https://open-api-docs.guesty.com/reference/guestsopenapicontroller_getgues
 """
 
 from typing import Optional
-from utils.client import make_request
+from client import make_request
 
 
-def get_all(limit: int = 25, skip: int = 0) -> dict:
+def get_all(limit: int = 25, skip: int = 0, columns: str = "fullName email") -> dict:
     """
     GET /v1/guests-crud
     Retrieve a paginated list of guests.
     """
-    return make_request("GET", "/v1/guests-crud", params={"limit": limit, "skip": skip})
+    return make_request("GET", "/v1/guests-crud", params={"limit": limit, "skip": skip, "columns": columns})
 
 
 def get_by_id(guest_id: str) -> dict:

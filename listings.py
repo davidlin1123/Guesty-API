@@ -5,7 +5,7 @@ Docs: https://open-api-docs.guesty.com/reference/get_listings
 """
 
 from typing import Optional
-from utils.client import make_request
+from client import make_request
 
 
 def get_all(limit: int = 25, skip: int = 0, fields: Optional[str] = None) -> dict:
