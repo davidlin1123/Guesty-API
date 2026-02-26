@@ -15,7 +15,7 @@ from settings import validate
 import listings
 import reservations
 import guests
-import tasks
+import blocklist_workflow
 
 
 def main():
@@ -44,15 +44,12 @@ def main():
     for g in result.get("results", []):
         print(f"  [{g.get('_id')}] {g.get('fullName', 'Unknown')} — {g.get('email', '')}")
 
-    # ── Tasks ─────────────────────────────────────────────────
-    print(" Tasks (first 5):")
-    result = tasks.get_all(limit=5)
-    for t in result.get("results", []):
-        print(f"  [{t.get('_id')}] {t.get('title', 'Untitled')} — {t.get('status', '')}")
-
     print("\n" + "=" * 55)
     print("  All checks passed")
     print("=" * 55 + "\n")
+
+    # ── Blocklist Workflow ─────────────────────────────────────────
+    blocklist_workflow.run()
 
 
 if __name__ == "__main__":

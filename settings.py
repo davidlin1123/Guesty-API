@@ -17,6 +17,10 @@ CLIENT_SECRET = os.getenv("GUESTY_CLIENT_SECRET")
 BASE_URL = os.getenv("GUESTY_BASE_URL", "https://open-api.guesty.com")
 TOKEN_URL = os.getenv("GUESTY_TOKEN_URL", "https://open-api.guesty.com/oauth2/token")
 
+# ─── Webhook Server ───────────────────────────────────────────────────────────
+WEBHOOK_SECRET = os.getenv("GUESTY_WEBHOOK_SECRET", "")
+WEBHOOK_PORT = int(os.getenv("WEBHOOK_PORT", 5000))
+
 # ─── Logging ──────────────────────────────────────────────────────────────────
 LOG_LEVEL = os.getenv("LOG_LEVEL", "INFO").upper()
 

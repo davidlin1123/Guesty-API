@@ -13,6 +13,7 @@ def get_all(
     skip: int = 0,
     status: Optional[str] = None,
     listing_id: Optional[str] = None,
+    guest_id: Optional[str] = None,
 ) -> dict:
     """
     GET /v1/reservations
@@ -23,13 +24,36 @@ def get_all(
         skip:       Offset for pagination.
         status:     Filter by status e.g. "confirmed", "inquiry", "canceled".
         listing_id: Filter by a specific listing.
+        guest_id:   Filter by a specific guest ID.
     """
     params = {"limit": limit, "skip": skip}
     if status:
         params["status"] = status
     if listing_id:
         params["listingId"] = listing_id
+    if guest_id:
+        params["guestId"] = guest_id
     return make_request("GET", "/v1/reservations", params=params)
+
+
+def get_all_by_guest(guest_id: str) -> list:
+    """
+    Paginate through ALL reservations for a given guest ID.
+    Returns a flat list of reservation dicts.
+    """
+    LIMIT = 100
+    skip = 0
+    all_results = []
+    while True:
+        page = get_all(limit=LIMIT, skip=skip, guest_id=guest_id)
+        results = page.get("results", [])
+        if not results:
+            break
+        all_results.extend(results)
+        skip += len(results)
+        if len(results) < LIMIT:
+            break
+    return all_results
 
 
 def get_by_id(reservation_id: str) -> dict:

@@ -16,6 +16,29 @@ def get_all(limit: int = 25, skip: int = 0, columns: str = "fullName email") -> 
     return make_request("GET", "/v1/guests-crud", params={"limit": limit, "skip": skip, "columns": columns})
 
 
+def get_all_pages(columns: str = "fullName email tags") -> list:
+    """
+    Paginate through ALL guests and return a flat list of guest dicts.
+
+    Args:
+        columns: Comma-separated list of fields to include in each result.
+                 Always include "tags" to support blocklist filtering.
+    """
+    LIMIT = 100
+    skip = 0
+    all_guests = []
+    while True:
+        page = get_all(limit=LIMIT, skip=skip, columns=columns)
+        results = page.get("results", [])
+        if not results:
+            break
+        all_guests.extend(results)
+        skip += len(results)
+        if len(results) < LIMIT:
+            break
+    return all_guests
+
+
 def get_by_id(guest_id: str) -> dict:
     """
     GET /v1/guests-crud/{id}
