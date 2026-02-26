@@ -12,7 +12,6 @@ sys.path.insert(0, os.path.dirname(os.path.abspath(__file__)))
 
 import requests
 from settings import validate
-import listings
 import reservations
 import guests
 import blocklist_workflow
@@ -25,12 +24,6 @@ def main():
     print("\n" + "=" * 55)
     print("  Guesty API Client — Connection Test")
     print("=" * 55)
-
-    # ── Listings ──────────────────────────────────────────────
-    print("\nListings (first 5):")
-    result = listings.get_all(limit=5)
-    for l in result.get("results", []):
-        print(f"  [{l.get('_id')}] {l.get('title', 'Untitled')}")
 
     # ── Reservations ──────────────────────────────────────────
     print("Reservations (first 5):")

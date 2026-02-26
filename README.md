@@ -29,38 +29,6 @@ flowchart TD
     A -->|7. Print results| M[Console Output]
 ```
 
-### Request Lifecycle
-
-```mermaid
-sequenceDiagram
-    participant User
-    participant main.py
-    participant Model as listings/reservations/guests
-    participant client.py
-    participant auth.py
-    participant Disk as .token_cache.json
-    participant Guesty as Guesty API
-
-    User->>main.py: python main.py
-    main.py->>main.py: validate() — check .env loaded
-    main.py->>Model: get_all(limit=5)
-    Model->>client.py: make_request("GET", "/v1/...")
-    client.py->>auth.py: get_token()
-    auth.py->>Disk: Load cached token
-    alt Token valid
-        Disk-->>auth.py: Cached token
-    else Token expired or missing
-        auth.py->>Guesty: POST /oauth2/token
-        Guesty-->>auth.py: access_token (24h)
-        auth.py->>Disk: Save token
-    end
-    auth.py-->>client.py: Bearer token
-    client.py->>Guesty: GET /v1/... (with Bearer token)
-    Guesty-->>client.py: JSON response
-    client.py-->>Model: Parsed dict
-    Model-->>main.py: Results
-    main.py-->>User: Print to console
-```
 
 ---
 
@@ -133,7 +101,6 @@ Guesty-API/
 ├── settings.py             # Loads .env into variables
 ├── auth.py                 # OAuth token fetching & disk-based caching
 ├── client.py               # Base HTTP request handler
-├── listings.py             # Listing API calls
 ├── reservations.py         # Reservation API calls
 ├── guests.py               # Guest API calls
 ├── blocklist_workflow.py   # Batch: scan all guests and flag blocklisted reservations
@@ -234,14 +201,8 @@ Custom fields for GY-xxxx: [{'fieldId': 'abc123', 'value': '...'}]
 ## Usage Examples
 
 ```python
-import listings
 import reservations
 import guests
-
-# Listings
-all_listings = listings.get_all(limit=10)
-single_listing = listings.get_by_id("abc123")
-calendar = listings.get_calendar("abc123", "2026-03-01", "2026-03-31")
 
 # Reservations
 all_reservations = reservations.get_all(limit=10, status="confirmed")
