@@ -54,7 +54,6 @@ flowchart TD
     A[User adds 'blocklisted' tag\nto guest in Guesty] --> B[guest.updated webhook fires]
     B --> C[webhook_server.py receives event]
     C --> D{Was tag already\npresent before?}
-    D -->|Yes — no change| E[No action]
     D -->|No — newly added| F[confirm_blocklisted\nGET /v1/guests-crud/id]
     F --> G{Tag confirmed\non live record?}
     G -->|No| H[Skip — log warning]
