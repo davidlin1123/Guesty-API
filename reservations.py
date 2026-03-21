@@ -39,7 +39,7 @@ def get_all(
 def get_all_by_guest(guest_id: str) -> list:
     """
     Paginate through ALL reservations for a given guest ID.
-    Returns a flat list of reservation dicts.
+    Returns a flat list of reservation dicts (past, current, and future).
     """
     LIMIT = 100
     skip = 0
@@ -54,6 +54,23 @@ def get_all_by_guest(guest_id: str) -> list:
         if len(results) < LIMIT:
             break
     return all_results
+
+
+def get_current_and_future_by_guest(guest_id: str) -> list:
+    """
+    Paginate through ALL reservations for a guest, then return only those
+    where checkOut >= today (i.e. current in-progress and future reservations).
+
+    Past reservations (checkout date already passed) are excluded so that
+    Trigger 1 of the blocklist workflow does not flag completed stays.
+
+    Guesty stores checkOut as an ISO-8601 date string ("YYYY-MM-DD...").
+    String comparison is safe here because the format is lexicographically ordered.
+    """
+    from datetime import date as _date
+    today = _date.today().isoformat()          # "YYYY-MM-DD"
+    all_res = get_all_by_guest(guest_id)
+    return [r for r in all_res if (r.get("checkOut") or "") >= today]
 
 
 def get_by_id(reservation_id: str) -> dict:

@@ -1,0 +1,64 @@
+AWSTemplateFormatVersion: "2010-09-09"
+Transform: AWS::Serverless-2016-10-31
+Description: Guesty blocklist webhook — API Gateway + Lambda
+
+# ── Globals ───────────────────────────────────────────────────────────────────
+Globals:
+  Function:
+    Runtime: python3.12
+    Timeout: 30          # Guesty may have multiple reservations to update
+    MemorySize: 128
+    Environment:
+      Variables:
+        # Credentials — resolved from SSM at deploy time
+        GUESTY_CLIENT_ID:     "{{resolve:ssm:/guesty/client_id}}"
+        GUESTY_CLIENT_SECRET: "{{resolve:ssm:/guesty/client_secret}}"
+        GUESTY_WEBHOOK_SECRET: "{{resolve:ssm:/guesty/webhook_secret}}"
+        # SSM path where the OAuth token cache is stored at runtime
+        TOKEN_CACHE_SSM_PARAM: /guesty/token_cache
+        LOG_LEVEL: INFO
+
+# ── Resources ─────────────────────────────────────────────────────────────────
+Resources:
+
+  GuestyWebhookFunction:
+    Type: AWS::Serverless::Function
+    Properties:
+      FunctionName: guesty-webhook
+      Handler: lambda_handler.handler
+      Description: "Receives Guesty webhook events and enforces the blocklist custom field"
+      Policies:
+        # Read the three credential parameters
+        - SSMParameterReadPolicy:
+            ParameterName: "guesty/client_id"
+        - SSMParameterReadPolicy:
+            ParameterName: "guesty/client_secret"
+        - SSMParameterReadPolicy:
+            ParameterName: "guesty/webhook_secret"
+        # Read AND write the token cache parameter
+        - Statement:
+            Effect: Allow
+            Action:
+              - ssm:GetParameter
+              - ssm:PutParameter
+            Resource: !Sub "arn:aws:ssm:${AWS::Region}:${AWS::AccountId}:parameter/guesty/token_cache"
+      Events:
+        WebhookPost:
+          Type: HttpApi
+          Properties:
+            Path: /webhook
+            Method: POST
+        HealthGet:
+          Type: HttpApi
+          Properties:
+            Path: /health
+            Method: GET
+
+# ── Outputs ───────────────────────────────────────────────────────────────────
+Outputs:
+  WebhookUrl:
+    Description: "Register this URL in Guesty Dashboard → Integrations → Webhooks"
+    Value: !Sub "https://${ServerlessHttpApi}.execute-api.${AWS::Region}.amazonaws.com/webhook"
+  HealthUrl:
+    Description: "Liveness probe"
+    Value: !Sub "https://${ServerlessHttpApi}.execute-api.${AWS::Region}.amazonaws.com/health"

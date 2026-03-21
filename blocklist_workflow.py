@@ -93,9 +93,21 @@ def confirm_blocklisted(guest_id: str) -> bool:
 
 def get_reservations(guest_id: str) -> list[dict]:
     """
-    Returns all reservations linked to guest_id, fully paginated.
+    Returns ALL reservations linked to guest_id, fully paginated (past, current, future).
+    Used by the batch run() workflow which needs a complete historical picture.
     """
     return reservations.get_all_by_guest(guest_id)
+
+
+def get_current_and_future_reservations(guest_id: str) -> list[dict]:
+    """
+    Returns only current and future reservations for guest_id (checkOut >= today).
+    Past reservations are excluded.
+
+    Used by Trigger 1 (guest.updated — blocklisted tag added) so that flagging
+    is applied only to upcoming and in-progress stays, not completed ones.
+    """
+    return reservations.get_current_and_future_by_guest(guest_id)
 
 
 # ─────────────────────────────────────────────────────────────────────────────
