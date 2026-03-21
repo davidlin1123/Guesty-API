@@ -117,17 +117,17 @@ flowchart TD
         B[API Gateway\nHTTP API]
         C[Lambda Function\nguesty-webhook]
         D[SSM Parameter Store]
-        D1[/guesty/client_id\nSecureString]
-        D2[/guesty/client_secret\nSecureString]
-        D3[/guesty/webhook_secret\nSecureString]
-        D4[/guesty/token_cache\nSecureString]
+        D1["/guesty/client_id\nSecureString"]
+        D2["/guesty/client_secret\nSecureString"]
+        D3["/guesty/webhook_secret\nSecureString"]
+        D4["/guesty/token_cache\nSecureString"]
         E[CloudWatch Logs]
     end
 
     subgraph GuestyAPI [Guesty Open API]
-        F[OAuth Server\n/oauth2/token]
-        G[Guests API\n/v1/guests-crud]
-        H[Reservations API\n/v1/reservations]
+        F["OAuth Server\n/oauth2/token"]
+        G["Guests API\n/v1/guests-crud"]
+        H["Reservations API\n/v1/reservations"]
     end
 
     A -->|POST /webhook\nHMAC-signed| B
