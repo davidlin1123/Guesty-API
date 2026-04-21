@@ -1,0 +1,1606 @@
+=================================================================
+  GUESTY BOOKING REPORT
+  Generated: 2026-02-18 12:46
+=================================================================
+
+  Total Listings:     1973
+  Total Reservations: 1156
+  Total Guests:       100
+
+=================================================================
+  BOOKING DETAILS
+=================================================================
+
+  Booking #1
+  --------------------------------------------------
+  Guest:        Thi Vu
+  Property:     Double Bed
+  Check-in:     Wed 18 Feb 2026
+  Check-out:    Tue 24 Feb 2026
+  Nights:       6
+  Platform:     bookingCom
+  Confirmation: BC-nV157lJoP
+
+  >> Thi Vu booked "Double Bed" for 6 night(s)
+     from Wed 18 Feb 2026 to Tue 24 Feb 2026 via bookingCom.
+
+  Booking #2
+  --------------------------------------------------
+  Guest:        Ian Penales
+  Property:     Ensuite King Single Room - A/C - Next to Central
+  Check-in:     Wed 18 Feb 2026
+  Check-out:    Sat 21 Feb 2026
+  Nights:       3
+  Platform:     airbnb2
+  Confirmation: HMBNREM9RA
+
+  >> Ian Penales booked "Ensuite King Single Room - A/C - Next to Central" for 3 night(s)
+     from Wed 18 Feb 2026 to Sat 21 Feb 2026 via airbnb2.
+
+  Booking #3
+  --------------------------------------------------
+  Guest:        Ray Cook
+  Property:     Comfy Private Queen Room - Nearby Station & Shops
+  Check-in:     Wed 18 Feb 2026
+  Check-out:    Mon 23 Feb 2026
+  Nights:       5
+  Platform:     bookingCom
+  Confirmation: BC-nlNx2W4Kl
+
+  >> Ray Cook booked "Comfy Private Queen Room - Nearby Station & Shops" for 5 night(s)
+     from Wed 18 Feb 2026 to Mon 23 Feb 2026 via bookingCom.
+
+  Booking #4
+  --------------------------------------------------
+  Guest:        Shoko Kondo
+  Property:     Tranquil Double Room - Next to Bus Station & Park
+  Check-in:     Wed 18 Feb 2026
+  Check-out:    Fri 20 Feb 2026
+  Nights:       2
+  Platform:     airbnb2
+  Confirmation: HMKKT5FQCQ
+
+  >> Shoko Kondo booked "Tranquil Double Room - Next to Bus Station & Park" for 2 night(s)
+     from Wed 18 Feb 2026 to Fri 20 Feb 2026 via airbnb2.
+
+  Booking #5
+  --------------------------------------------------
+  Guest:        Yuk Lam Ng
+  Property:     Detached Double Room - Seconds to Transport
+  Check-in:     Wed 18 Feb 2026
+  Check-out:    Fri 27 Feb 2026
+  Nights:       9
+  Platform:     airbnb2
+  Confirmation: HM5HA32FR9
+
+  >> Yuk Lam Ng booked "Detached Double Room - Seconds to Transport" for 9 night(s)
+     from Wed 18 Feb 2026 to Fri 27 Feb 2026 via airbnb2.
+
+  Booking #6
+  --------------------------------------------------
+  Guest:        Châm Đàm
+  Property:     Comfortable Double Room with 2 Beds in Eastwood
+  Check-in:     Wed 18 Feb 2026
+  Check-out:    Sat 21 Feb 2026
+  Nights:       3
+  Platform:     airbnb2
+  Confirmation: HMQ282R2WF
+
+  >> Châm Đàm booked "Comfortable Double Room with 2 Beds in Eastwood" for 3 night(s)
+     from Wed 18 Feb 2026 to Sat 21 Feb 2026 via airbnb2.
+
+  Booking #7
+  --------------------------------------------------
+  Guest:        Istvan Teli
+  Property:     Budget Twin Room in Belmore - Convenient Stay
+  Check-in:     Wed 18 Feb 2026
+  Check-out:    Fri 20 Feb 2026
+  Nights:       2
+  Platform:     bookingCom
+  Confirmation: BC-PGA2rR97z
+
+  >> Istvan Teli booked "Budget Twin Room in Belmore - Convenient Stay" for 2 night(s)
+     from Wed 18 Feb 2026 to Fri 20 Feb 2026 via bookingCom.
+
+  Booking #8
+  --------------------------------------------------
+  Guest:        Zhenxin Zhao
+  Property:     Quaint Double Room - Seconds to Shops & Eateries
+  Check-in:     Wed 18 Feb 2026
+  Check-out:    Sun 22 Feb 2026
+  Nights:       4
+  Platform:     bookingCom
+  Confirmation: BC-ZDB6MKDlQ
+
+  >> Zhenxin Zhao booked "Quaint Double Room - Seconds to Shops & Eateries" for 4 night(s)
+     from Wed 18 Feb 2026 to Sun 22 Feb 2026 via bookingCom.
+
+  Booking #9
+  --------------------------------------------------
+  Guest:        Jake Duncan
+  Property:     Elegant Double Ensuite Room - AC - 1Min to Central
+  Check-in:     Wed 18 Feb 2026
+  Check-out:    Sun 22 Feb 2026
+  Nights:       4
+  Platform:     bookingCom
+  Confirmation: BC-YZj5KxDRA
+
+  >> Jake Duncan booked "Elegant Double Ensuite Room - AC - 1Min to Central" for 4 night(s)
+     from Wed 18 Feb 2026 to Sun 22 Feb 2026 via bookingCom.
+
+  Booking #10
+  --------------------------------------------------
+  Guest:        Robin Ferreira
+  Property:     Sleek & Comfortable Single Room at Revesby
+  Check-in:     Wed 18 Feb 2026
+  Check-out:    Tue 24 Feb 2026
+  Nights:       6
+  Platform:     airbnb2
+  Confirmation: HMKZJFX3D9
+
+  >> Robin Ferreira booked "Sleek & Comfortable Single Room at Revesby" for 6 night(s)
+     from Wed 18 Feb 2026 to Tue 24 Feb 2026 via airbnb2.
+
+  Booking #11
+  --------------------------------------------------
+  Guest:        Brahnda Eleazar
+  Property:     Modern Double Ensuite Room - A/C - Next to Central
+  Check-in:     Wed 18 Feb 2026
+  Check-out:    Fri 20 Feb 2026
+  Nights:       2
+  Platform:     airbnb2
+  Confirmation: HMN5N4T45J
+
+  >> Brahnda Eleazar booked "Modern Double Ensuite Room - A/C - Next to Central" for 2 night(s)
+     from Wed 18 Feb 2026 to Fri 20 Feb 2026 via airbnb2.
+
+  Booking #12
+  --------------------------------------------------
+  Guest:        Sanjay Parbhoo
+  Property:     Compact & Comfortable Single Stay - Great Location
+  Check-in:     Wed 18 Feb 2026
+  Check-out:    Thu 19 Feb 2026
+  Nights:       1
+  Platform:     airbnb2
+  Confirmation: HMACKDXDTP
+
+  >> Sanjay Parbhoo booked "Compact & Comfortable Single Stay - Great Location" for 1 night(s)
+     from Wed 18 Feb 2026 to Thu 19 Feb 2026 via airbnb2.
+
+  Booking #13
+  --------------------------------------------------
+  Guest:        Adrian Parkinson
+  Property:     Deluxe Double Room - Seconds to Central Station
+  Check-in:     Wed 18 Feb 2026
+  Check-out:    Mon 23 Feb 2026
+  Nights:       5
+  Platform:     bookingCom
+  Confirmation: BC-7zlgJ4PM8
+
+  >> Adrian Parkinson booked "Deluxe Double Room - Seconds to Central Station" for 5 night(s)
+     from Wed 18 Feb 2026 to Mon 23 Feb 2026 via bookingCom.
+
+  Booking #14
+  --------------------------------------------------
+  Guest:        CHING-WEN WANG
+  Property:     Simple 2-Double Bed Studio Stay - Peakhurst
+  Check-in:     Wed 18 Feb 2026
+  Check-out:    Sat 21 Feb 2026
+  Nights:       3
+  Platform:     bookingCom
+  Confirmation: BC-oP34APLRL
+
+  >> CHING-WEN WANG booked "Simple 2-Double Bed Studio Stay - Peakhurst" for 3 night(s)
+     from Wed 18 Feb 2026 to Sat 21 Feb 2026 via bookingCom.
+
+  Booking #15
+  --------------------------------------------------
+  Guest:        충재 이
+  Property:     Classic Double Ensuite Room - Central Location - AC
+  Check-in:     Wed 18 Feb 2026
+  Check-out:    Sat 21 Feb 2026
+  Nights:       3
+  Platform:     airbnb2
+  Confirmation: HMQS4FN2WA
+
+  >> 충재 이 booked "Classic Double Ensuite Room - Central Location - AC" for 3 night(s)
+     from Wed 18 Feb 2026 to Sat 21 Feb 2026 via airbnb2.
+
+  Booking #16
+  --------------------------------------------------
+  Guest:        Ruth Bedford
+  Property:     Large Quad Room with Private Bathroom - Great Spot
+  Check-in:     Wed 18 Feb 2026
+  Check-out:    Thu 19 Feb 2026
+  Nights:       1
+  Platform:     bookingCom
+  Confirmation: BC-wADrJv0GR
+
+  >> Ruth Bedford booked "Large Quad Room with Private Bathroom - Great Spot" for 1 night(s)
+     from Wed 18 Feb 2026 to Thu 19 Feb 2026 via bookingCom.
+
+  Booking #17
+  --------------------------------------------------
+  Guest:        Dac Tran
+  Property:     Well-located Single Room in Cabramatta
+  Check-in:     Wed 18 Feb 2026
+  Check-out:    Sun 22 Feb 2026
+  Nights:       4
+  Platform:     airbnb2
+  Confirmation: HM32RP8AQJ
+
+  >> Dac Tran booked "Well-located Single Room in Cabramatta" for 4 night(s)
+     from Wed 18 Feb 2026 to Sun 22 Feb 2026 via airbnb2.
+
+  Booking #18
+  --------------------------------------------------
+  Guest:        Jenny Tran
+  Property:     Luminous Queen Room – Close to Airport & UNSW
+  Check-in:     Wed 18 Feb 2026
+  Check-out:    Thu 19 Feb 2026
+  Nights:       1
+  Platform:     bookingCom
+  Confirmation: BC-zlOkwqAy7
+
+  >> Jenny Tran booked "Luminous Queen Room – Close to Airport & UNSW" for 1 night(s)
+     from Wed 18 Feb 2026 to Thu 19 Feb 2026 via bookingCom.
+
+  Booking #19
+  --------------------------------------------------
+  Guest:        Asmita Shrestha
+  Property:     Courtyard Double Room Near Top Ryde Shopping Centre
+  Check-in:     Wed 18 Feb 2026
+  Check-out:    Sat 21 Feb 2026
+  Nights:       3
+  Platform:     bookingCom
+  Confirmation: BC-wgPw7KROM
+
+  >> Asmita Shrestha booked "Courtyard Double Room Near Top Ryde Shopping Centre" for 3 night(s)
+     from Wed 18 Feb 2026 to Sat 21 Feb 2026 via bookingCom.
+
+  Booking #20
+  --------------------------------------------------
+  Guest:        恩慈 林
+  Property:     Luxe Ensuite Double Room - A/C - Next to Central
+  Check-in:     Wed 18 Feb 2026
+  Check-out:    Fri 20 Feb 2026
+  Nights:       2
+  Platform:     airbnb2
+  Confirmation: HM9TZYWH84
+
+  >> 恩慈 林 booked "Luxe Ensuite Double Room - A/C - Next to Central" for 2 night(s)
+     from Wed 18 Feb 2026 to Fri 20 Feb 2026 via airbnb2.
+
+  Booking #21
+  --------------------------------------------------
+  Guest:        James Hammond
+  Property:     Peaceful King Single Room Near Attractions
+  Check-in:     Wed 18 Feb 2026
+  Check-out:    Thu 19 Feb 2026
+  Nights:       1
+  Platform:     bookingCom
+  Confirmation: BC-q8B6oDP83
+
+  >> James Hammond booked "Peaceful King Single Room Near Attractions" for 1 night(s)
+     from Wed 18 Feb 2026 to Thu 19 Feb 2026 via bookingCom.
+
+  Booking #22
+  --------------------------------------------------
+  Guest:        Clélia Gregorio
+  Property:     Elegant Double Stay - AC - Heart of the City
+  Check-in:     Wed 18 Feb 2026
+  Check-out:    Sat 21 Feb 2026
+  Nights:       3
+  Platform:     airbnb2
+  Confirmation: HMZHPDAWH8
+
+  >> Clélia Gregorio booked "Elegant Double Stay - AC - Heart of the City" for 3 night(s)
+     from Wed 18 Feb 2026 to Sat 21 Feb 2026 via airbnb2.
+
+  Booking #23
+  --------------------------------------------------
+  Guest:        Matthieu Gautier
+  Property:     Private Double Room Steps from UNSW & Light Rail
+  Check-in:     Wed 18 Feb 2026
+  Check-out:    Thu 19 Feb 2026
+  Nights:       1
+  Platform:     bookingCom
+  Confirmation: BC-NKLPPBpQD
+
+  >> Matthieu Gautier booked "Private Double Room Steps from UNSW & Light Rail" for 1 night(s)
+     from Wed 18 Feb 2026 to Thu 19 Feb 2026 via bookingCom.
+
+  Booking #24
+  --------------------------------------------------
+  Guest:        Caroline Touchet
+  Property:     Single Room - Private Spot - Convenient Location
+  Check-in:     Wed 18 Feb 2026
+  Check-out:    Mon 02 Mar 2026
+  Nights:       12
+  Platform:     airbnb2
+  Confirmation: HMAX9A8AK4
+
+  >> Caroline Touchet booked "Single Room - Private Spot - Convenient Location" for 12 night(s)
+     from Wed 18 Feb 2026 to Mon 02 Mar 2026 via airbnb2.
+
+  Booking #25
+  --------------------------------------------------
+  Guest:        Athan Stephandellis
+  Property:     Private Single Room - Mins to Train Station
+  Check-in:     Wed 18 Feb 2026
+  Check-out:    Tue 24 Feb 2026
+  Nights:       6
+  Platform:     airbnb2
+  Confirmation: HMXKB2WDFX
+
+  >> Athan Stephandellis booked "Private Single Room - Mins to Train Station" for 6 night(s)
+     from Wed 18 Feb 2026 to Tue 24 Feb 2026 via airbnb2.
+
+  Booking #26
+  --------------------------------------------------
+  Guest:        Joki Wong
+  Property:     Peaceful & Central Stay - Private Double Room
+  Check-in:     Wed 18 Feb 2026
+  Check-out:    Thu 19 Feb 2026
+  Nights:       1
+  Platform:     bookingCom
+  Confirmation: BC-2EoKn2NQ1
+
+  >> Joki Wong booked "Peaceful & Central Stay - Private Double Room" for 1 night(s)
+     from Wed 18 Feb 2026 to Thu 19 Feb 2026 via bookingCom.
+
+  Booking #27
+  --------------------------------------------------
+  Guest:        Olivia Phelps
+  Property:     Luxe King Single Ensuite Room - AC - Next to CBD
+  Check-in:     Wed 18 Feb 2026
+  Check-out:    Wed 18 Feb 2026
+  Nights:       0
+  Platform:     bookingCom
+  Confirmation: BC-oKxN1NPV3
+
+  >> Olivia Phelps booked "Luxe King Single Ensuite Room - AC - Next to CBD" for 0 night(s)
+     from Wed 18 Feb 2026 to Wed 18 Feb 2026 via bookingCom.
+
+  Booking #28
+  --------------------------------------------------
+  Guest:        Vong Chikiet
+  Property:     Double Bed Surry Hills Stay | Ensuite Bath
+  Check-in:     Wed 18 Feb 2026
+  Check-out:    Thu 19 Feb 2026
+  Nights:       1
+  Platform:     airbnb2
+  Confirmation: HMCYZNW9R4
+
+  >> Vong Chikiet booked "Double Bed Surry Hills Stay | Ensuite Bath" for 1 night(s)
+     from Wed 18 Feb 2026 to Thu 19 Feb 2026 via airbnb2.
+
+  Booking #29
+  --------------------------------------------------
+  Guest:        晨怡 盛
+  Property:     Double Room - Next to the Station
+  Check-in:     Wed 18 Feb 2026
+  Check-out:    Fri 20 Feb 2026
+  Nights:       2
+  Platform:     airbnb2
+  Confirmation: HMCBH2MSN4
+
+  >> 晨怡 盛 booked "Double Room - Next to the Station" for 2 night(s)
+     from Wed 18 Feb 2026 to Fri 20 Feb 2026 via airbnb2.
+
+  Booking #30
+  --------------------------------------------------
+  Guest:        Katrina Hampson
+  Property:     Luxe Ensuite Double Room - A/C - Next to Central
+  Check-in:     Wed 18 Feb 2026
+  Check-out:    Wed 18 Feb 2026
+  Nights:       0
+  Platform:     tripCom
+  Confirmation: CT-1167727303965532-0ZJUQ
+
+  >> Katrina Hampson booked "Luxe Ensuite Double Room - A/C - Next to Central" for 0 night(s)
+     from Wed 18 Feb 2026 to Wed 18 Feb 2026 via tripCom.
+
+  Booking #31
+  --------------------------------------------------
+  Guest:        Tuo Chen
+  Property:     Single Room - Quaint Spot - Centrally Located - Shared Bathroom
+  Check-in:     Wed 18 Feb 2026
+  Check-out:    Wed 18 Feb 2026
+  Nights:       0
+  Platform:     bookingCom
+  Confirmation: BC-R629GQQAR
+
+  >> Tuo Chen booked "Single Room - Quaint Spot - Centrally Located - Shared Bathroom" for 0 night(s)
+     from Wed 18 Feb 2026 to Wed 18 Feb 2026 via bookingCom.
+
+  Booking #32
+  --------------------------------------------------
+  Guest:        Nicholas Mair
+  Property:     Waterfront Studio Room for Four - Premium Stay
+  Check-in:     Wed 18 Feb 2026
+  Check-out:    Wed 18 Feb 2026
+  Nights:       0
+  Platform:     bookingCom
+  Confirmation: BC-G7kxDqx17
+
+  >> Nicholas Mair booked "Waterfront Studio Room for Four - Premium Stay" for 0 night(s)
+     from Wed 18 Feb 2026 to Wed 18 Feb 2026 via bookingCom.
+
+  Booking #33
+  --------------------------------------------------
+  Guest:        Jaclyn Ely
+  Property:     Inviting Ensuite Double Room with AC - Surry Hills
+  Check-in:     Wed 18 Feb 2026
+  Check-out:    Wed 18 Feb 2026
+  Nights:       0
+  Platform:     airbnb2
+  Confirmation: HMWATW5NAT
+
+  >> Jaclyn Ely booked "Inviting Ensuite Double Room with AC - Surry Hills" for 0 night(s)
+     from Wed 18 Feb 2026 to Wed 18 Feb 2026 via airbnb2.
+
+  Booking #34
+  --------------------------------------------------
+  Guest:        FENZHI WEN
+  Property:     Boutique Double Room - Centrally Located
+  Check-in:     Wed 18 Feb 2026
+  Check-out:    Wed 18 Feb 2026
+  Nights:       0
+  Platform:     bookingCom
+  Confirmation: BC-yA4oGk4Gn
+
+  >> FENZHI WEN booked "Boutique Double Room - Centrally Located" for 0 night(s)
+     from Wed 18 Feb 2026 to Wed 18 Feb 2026 via bookingCom.
+
+  Booking #35
+  --------------------------------------------------
+  Guest:        Minol Jayakody
+  Property:     Budget Double Room in Belmore - Convenient Stay
+  Check-in:     Wed 18 Feb 2026
+  Check-out:    Sun 22 Feb 2026
+  Nights:       4
+  Platform:     airbnb2
+  Confirmation: HM4MHNY4MT
+
+  >> Minol Jayakody booked "Budget Double Room in Belmore - Convenient Stay" for 4 night(s)
+     from Wed 18 Feb 2026 to Sun 22 Feb 2026 via airbnb2.
+
+  Booking #36
+  --------------------------------------------------
+  Guest:        Duc Thang Ha
+  Property:     Elegant Apt - 2BR - A/C - Centrally Located
+  Check-in:     Wed 18 Feb 2026
+  Check-out:    Sun 22 Feb 2026
+  Nights:       4
+  Platform:     bookingCom
+  Confirmation: BC-kjA4MJRE6
+
+  >> Duc Thang Ha booked "Elegant Apt - 2BR - A/C - Centrally Located" for 4 night(s)
+     from Wed 18 Feb 2026 to Sun 22 Feb 2026 via bookingCom.
+
+  Booking #37
+  --------------------------------------------------
+  Guest:        Daniel Osorio
+  Property:     Light & Simple Double Room - Peakhurst Area
+  Check-in:     Wed 18 Feb 2026
+  Check-out:    Sat 21 Feb 2026
+  Nights:       3
+  Platform:     airbnb2
+  Confirmation: HMHNJ8T438
+
+  >> Daniel Osorio booked "Light & Simple Double Room - Peakhurst Area" for 3 night(s)
+     from Wed 18 Feb 2026 to Sat 21 Feb 2026 via airbnb2.
+
+  Booking #38
+  --------------------------------------------------
+  Guest:        Marc Fehrenbach
+  Property:     Boutique Double Room Near Light Rail
+  Check-in:     Wed 18 Feb 2026
+  Check-out:    Sun 01 Mar 2026
+  Nights:       11
+  Platform:     bookingCom
+  Confirmation: BC-VrJP08WRM
+
+  >> Marc Fehrenbach booked "Boutique Double Room Near Light Rail" for 11 night(s)
+     from Wed 18 Feb 2026 to Sun 01 Mar 2026 via bookingCom.
+
+  Booking #39
+  --------------------------------------------------
+  Guest:        XIANG GAO
+  Property:     Single Room - Private Spot - Convenient Location
+  Check-in:     Wed 18 Feb 2026
+  Check-out:    Wed 18 Feb 2026
+  Nights:       0
+  Platform:     tripCom
+  Confirmation: CT-1128145758733817-D8FTV
+
+  >> XIANG GAO booked "Single Room - Private Spot - Convenient Location" for 0 night(s)
+     from Wed 18 Feb 2026 to Wed 18 Feb 2026 via tripCom.
+
+  Booking #40
+  --------------------------------------------------
+  Guest:        Amogh Agarwal
+  Property:     Double Room in a Convenient Central Location
+  Check-in:     Wed 18 Feb 2026
+  Check-out:    Sat 21 Feb 2026
+  Nights:       3
+  Platform:     airbnb2
+  Confirmation: HM55NANC3K
+
+  >> Amogh Agarwal booked "Double Room in a Convenient Central Location" for 3 night(s)
+     from Wed 18 Feb 2026 to Sat 21 Feb 2026 via airbnb2.
+
+  Booking #41
+  --------------------------------------------------
+  Guest:        Esther Boonmee
+  Property:     Prime Double Room - AC - Seconds to Central/CBD
+  Check-in:     Wed 18 Feb 2026
+  Check-out:    Thu 19 Feb 2026
+  Nights:       1
+  Platform:     airbnb2
+  Confirmation: HMBBRFRXKT
+
+  >> Esther Boonmee booked "Prime Double Room - AC - Seconds to Central/CBD" for 1 night(s)
+     from Wed 18 Feb 2026 to Thu 19 Feb 2026 via airbnb2.
+
+  Booking #42
+  --------------------------------------------------
+  Guest:        Sherralyn Hill
+  Property:     Welcoming Double Room w/Ensuite Bath - Surry Hills
+  Check-in:     Wed 18 Feb 2026
+  Check-out:    Wed 18 Feb 2026
+  Nights:       0
+  Platform:     bookingCom
+  Confirmation: BC-pnQ4VZ8Yy
+
+  >> Sherralyn Hill booked "Welcoming Double Room w/Ensuite Bath - Surry Hills" for 0 night(s)
+     from Wed 18 Feb 2026 to Wed 18 Feb 2026 via bookingCom.
+
+  Booking #43
+  --------------------------------------------------
+  Guest:        Eimear Kilcullen
+  Property:     Basic Double Room in Liverpool – Affordable Stay
+  Check-in:     Wed 18 Feb 2026
+  Check-out:    Sat 21 Feb 2026
+  Nights:       3
+  Platform:     bookingCom
+  Confirmation: BC-yOgxkNGmW
+
+  >> Eimear Kilcullen booked "Basic Double Room in Liverpool – Affordable Stay" for 3 night(s)
+     from Wed 18 Feb 2026 to Sat 21 Feb 2026 via bookingCom.
+
+  Booking #44
+  --------------------------------------------------
+  Guest:        Scott Tabram
+  Property:     Kensington Double Room Near Light Rail & UNSW
+  Check-in:     Wed 18 Feb 2026
+  Check-out:    Fri 20 Feb 2026
+  Nights:       2
+  Platform:     airbnb2
+  Confirmation: HMATER3J3Z
+
+  >> Scott Tabram booked "Kensington Double Room Near Light Rail & UNSW" for 2 night(s)
+     from Wed 18 Feb 2026 to Fri 20 Feb 2026 via airbnb2.
+
+  Booking #45
+  --------------------------------------------------
+  Guest:        Thamani Wijesinghe
+  Property:     Cozy Single Room - A/C - Next to Central Station
+  Check-in:     Wed 18 Feb 2026
+  Check-out:    Wed 18 Feb 2026
+  Nights:       0
+  Platform:     bookingCom
+  Confirmation: BC-kg9L87xzJ
+
+  >> Thamani Wijesinghe booked "Cozy Single Room - A/C - Next to Central Station" for 0 night(s)
+     from Wed 18 Feb 2026 to Wed 18 Feb 2026 via bookingCom.
+
+  Booking #46
+  --------------------------------------------------
+  Guest:        Hadia Binte Mujib
+  Property:     Peaceful Double Room | Near Parks & Transit
+  Check-in:     Wed 18 Feb 2026
+  Check-out:    Fri 20 Feb 2026
+  Nights:       2
+  Platform:     airbnb2
+  Confirmation: HMMB89NXH4
+
+  >> Hadia Binte Mujib booked "Peaceful Double Room | Near Parks & Transit" for 2 night(s)
+     from Wed 18 Feb 2026 to Fri 20 Feb 2026 via airbnb2.
+
+  Booking #47
+  --------------------------------------------------
+  Guest:        Joanne Brancourt
+  Property:     Luxe Waterview Double Room - Ideal for Relaxation
+  Check-in:     Wed 18 Feb 2026
+  Check-out:    Wed 18 Feb 2026
+  Nights:       0
+  Platform:     bookingCom
+  Confirmation: BC-8A8y9y3VW
+
+  >> Joanne Brancourt booked "Luxe Waterview Double Room - Ideal for Relaxation" for 0 night(s)
+     from Wed 18 Feb 2026 to Wed 18 Feb 2026 via bookingCom.
+
+  Booking #48
+  --------------------------------------------------
+  Guest:        Ynyr Jones
+  Property:     Cozy Queen Room -  Next to Stations & Shops
+  Check-in:     Wed 18 Feb 2026
+  Check-out:    Sat 21 Feb 2026
+  Nights:       3
+  Platform:     airbnb2
+  Confirmation: HM9CTB5CNK
+
+  >> Ynyr Jones booked "Cozy Queen Room -  Next to Stations & Shops" for 3 night(s)
+     from Wed 18 Feb 2026 to Sat 21 Feb 2026 via airbnb2.
+
+  Booking #49
+  --------------------------------------------------
+  Guest:        Kim Wiesner
+  Property:     Ensuite Double Room – Nearby CBD/UTS/USYD
+  Check-in:     Wed 18 Feb 2026
+  Check-out:    Wed 18 Feb 2026
+  Nights:       0
+  Platform:     bookingCom
+  Confirmation: BC-Zy1qRrKwJ
+
+  >> Kim Wiesner booked "Ensuite Double Room – Nearby CBD/UTS/USYD" for 0 night(s)
+     from Wed 18 Feb 2026 to Wed 18 Feb 2026 via bookingCom.
+
+  Booking #50
+  --------------------------------------------------
+  Guest:        Vinicius Trevizani Caberlon
+  Property:     Sleek & Comfortable Single Room at Revesby
+  Check-in:     Wed 18 Feb 2026
+  Check-out:    Thu 26 Feb 2026
+  Nights:       8
+  Platform:     airbnb2
+  Confirmation: HMHJDDBE53
+
+  >> Vinicius Trevizani Caberlon booked "Sleek & Comfortable Single Room at Revesby" for 8 night(s)
+     from Wed 18 Feb 2026 to Thu 26 Feb 2026 via airbnb2.
+
+  Booking #51
+  --------------------------------------------------
+  Guest:        桂庭 郭
+  Property:     Homely Auburn 2BR - Fast Access to Sydney & Beyond
+  Check-in:     Wed 18 Feb 2026
+  Check-out:    Mon 23 Feb 2026
+  Nights:       5
+  Platform:     airbnb2
+  Confirmation: HMD4FDH5NC
+
+  >> 桂庭 郭 booked "Homely Auburn 2BR - Fast Access to Sydney & Beyond" for 5 night(s)
+     from Wed 18 Feb 2026 to Mon 23 Feb 2026 via airbnb2.
+
+  Booking #52
+  --------------------------------------------------
+  Guest:        Justine Ibars
+  Property:     Comfort & Calm - Queen Room on a Quiet Crescent
+  Check-in:     Wed 18 Feb 2026
+  Check-out:    Sat 28 Feb 2026
+  Nights:       10
+  Platform:     airbnb2
+  Confirmation: HMWH88ADBF
+
+  >> Justine Ibars booked "Comfort & Calm - Queen Room on a Quiet Crescent" for 10 night(s)
+     from Wed 18 Feb 2026 to Sat 28 Feb 2026 via airbnb2.
+
+  Booking #53
+  --------------------------------------------------
+  Guest:        Luna Daine
+  Property:     Well-Situated Double Room Near Hurstville Station 
+  Check-in:     Wed 18 Feb 2026
+  Check-out:    Fri 20 Feb 2026
+  Nights:       2
+  Platform:     bookingCom
+  Confirmation: BC-jBnVz2Jyl
+
+  >> Luna Daine booked "Well-Situated Double Room Near Hurstville Station " for 2 night(s)
+     from Wed 18 Feb 2026 to Fri 20 Feb 2026 via bookingCom.
+
+  Booking #54
+  --------------------------------------------------
+  Guest:        Ann-Maree Chandler
+  Property:     Modern Single Room - A/C - 1Min Walk to Central
+  Check-in:     Wed 18 Feb 2026
+  Check-out:    Thu 19 Feb 2026
+  Nights:       1
+  Platform:     airbnb2
+  Confirmation: HMKSMMJ2HZ
+
+  >> Ann-Maree Chandler booked "Modern Single Room - A/C - 1Min Walk to Central" for 1 night(s)
+     from Wed 18 Feb 2026 to Thu 19 Feb 2026 via airbnb2.
+
+  Booking #55
+  --------------------------------------------------
+  Guest:        Alicja Budnik
+  Property:     Spacious Quadruple Room – Nearby Station & Park
+  Check-in:     Wed 18 Feb 2026
+  Check-out:    Thu 19 Feb 2026
+  Nights:       1
+  Platform:     bookingCom
+  Confirmation: BC-o0A8kWBPB
+
+  >> Alicja Budnik booked "Spacious Quadruple Room – Nearby Station & Park" for 1 night(s)
+     from Wed 18 Feb 2026 to Thu 19 Feb 2026 via bookingCom.
+
+  Booking #56
+  --------------------------------------------------
+  Guest:        Matilde Puga
+  Property:     Elegant Double Ensuite Room - AC - 1Min to Central
+  Check-in:     Wed 18 Feb 2026
+  Check-out:    Fri 20 Feb 2026
+  Nights:       2
+  Platform:     airbnb2
+  Confirmation: HMNXZHMDE2
+
+  >> Matilde Puga booked "Elegant Double Ensuite Room - AC - 1Min to Central" for 2 night(s)
+     from Wed 18 Feb 2026 to Fri 20 Feb 2026 via airbnb2.
+
+  Booking #57
+  --------------------------------------------------
+  Guest:        Sandesh Chand
+  Property:     Tranquil Double Room - Close to Stations & Shops
+  Check-in:     Wed 18 Feb 2026
+  Check-out:    Wed 18 Feb 2026
+  Nights:       0
+  Platform:     airbnb2
+  Confirmation: HMXQP4X3WM
+
+  >> Sandesh Chand booked "Tranquil Double Room - Close to Stations & Shops" for 0 night(s)
+     from Wed 18 Feb 2026 to Wed 18 Feb 2026 via airbnb2.
+
+  Booking #58
+  --------------------------------------------------
+  Guest:        Charline Legrand
+  Property:     Inviting Double Room - A Peaceful Budget Stay in Padstow - Shared Bathroom
+  Check-in:     Wed 18 Feb 2026
+  Check-out:    Sun 01 Mar 2026
+  Nights:       11
+  Platform:     bookingCom
+  Confirmation: BC-xB5PMQXBJ
+
+  >> Charline Legrand booked "Inviting Double Room - A Peaceful Budget Stay in Padstow - Shared Bathroom" for 11 night(s)
+     from Wed 18 Feb 2026 to Sun 01 Mar 2026 via bookingCom.
+
+  Booking #59
+  --------------------------------------------------
+  Guest:        Anastasiya ANIKEICHYK
+  Property:     Private Queen Retreat - Steps from Shops & Transit
+  Check-in:     Wed 18 Feb 2026
+  Check-out:    Mon 23 Feb 2026
+  Nights:       5
+  Platform:     bookingCom
+  Confirmation: BC-ElRJGOzXK
+
+  >> Anastasiya ANIKEICHYK booked "Private Queen Retreat - Steps from Shops & Transit" for 5 night(s)
+     from Wed 18 Feb 2026 to Mon 23 Feb 2026 via bookingCom.
+
+  Booking #60
+  --------------------------------------------------
+  Guest:        Ali Erkoc
+  Property:     Double Room - Private Spot - Near Transport
+  Check-in:     Wed 18 Feb 2026
+  Check-out:    Wed 18 Feb 2026
+  Nights:       0
+  Platform:     bookingCom
+  Confirmation: BC-pVM60O14Q
+
+  >> Ali Erkoc booked "Double Room - Private Spot - Near Transport" for 0 night(s)
+     from Wed 18 Feb 2026 to Wed 18 Feb 2026 via bookingCom.
+
+  Booking #61
+  --------------------------------------------------
+  Guest:        Aurore Mootz
+  Property:     Bright and Spacious Queen Room in Narwee
+  Check-in:     Wed 18 Feb 2026
+  Check-out:    Sat 21 Feb 2026
+  Nights:       3
+  Platform:     airbnb2
+  Confirmation: HM2JWT22PX
+
+  >> Aurore Mootz booked "Bright and Spacious Queen Room in Narwee" for 3 night(s)
+     from Wed 18 Feb 2026 to Sat 21 Feb 2026 via airbnb2.
+
+  Booking #62
+  --------------------------------------------------
+  Guest:        YIWEI ZHENG
+  Property:     Kensington Double Room - Central & Affordable
+  Check-in:     Wed 18 Feb 2026
+  Check-out:    Wed 18 Feb 2026
+  Nights:       0
+  Platform:     bookingCom
+  Confirmation: BC-0yn0PG1LN
+
+  >> YIWEI ZHENG booked "Kensington Double Room - Central & Affordable" for 0 night(s)
+     from Wed 18 Feb 2026 to Wed 18 Feb 2026 via bookingCom.
+
+  Booking #63
+  --------------------------------------------------
+  Guest:        Amine Khadir
+  Property:     Detached King Bed Studio w/ Ensuite Bath & Kitchen
+  Check-in:     Wed 18 Feb 2026
+  Check-out:    Tue 24 Feb 2026
+  Nights:       6
+  Platform:     bookingCom
+  Confirmation: BC-Qmw1yX40G
+
+  >> Amine Khadir booked "Detached King Bed Studio w/ Ensuite Bath & Kitchen" for 6 night(s)
+     from Wed 18 Feb 2026 to Tue 24 Feb 2026 via bookingCom.
+
+  Booking #64
+  --------------------------------------------------
+  Guest:        Patrick Brown
+  Property:     Private Single Room - Central Location
+  Check-in:     Wed 18 Feb 2026
+  Check-out:    Tue 24 Feb 2026
+  Nights:       6
+  Platform:     airbnb2
+  Confirmation: HMXA5TA8XH
+
+  >> Patrick Brown booked "Private Single Room - Central Location" for 6 night(s)
+     from Wed 18 Feb 2026 to Tue 24 Feb 2026 via airbnb2.
+
+  Booking #65
+  --------------------------------------------------
+  Guest:        Kate Millward
+  Property:     Chic Double Room - A/C - Centrally Located of SYD
+  Check-in:     Wed 18 Feb 2026
+  Check-out:    Wed 18 Feb 2026
+  Nights:       0
+  Platform:     airbnb2
+  Confirmation: HMSX8HDB9A
+
+  >> Kate Millward booked "Chic Double Room - A/C - Centrally Located of SYD" for 0 night(s)
+     from Wed 18 Feb 2026 to Wed 18 Feb 2026 via airbnb2.
+
+  Booking #66
+  --------------------------------------------------
+  Guest:        Timothy Curchod
+  Property:     Double Room with Rustic Charm - Great Location
+  Check-in:     Wed 18 Feb 2026
+  Check-out:    Wed 18 Feb 2026
+  Nights:       0
+  Platform:     bookingCom
+  Confirmation: BC-LlZx8zBz4
+
+  >> Timothy Curchod booked "Double Room with Rustic Charm - Great Location" for 0 night(s)
+     from Wed 18 Feb 2026 to Wed 18 Feb 2026 via bookingCom.
+
+  Booking #67
+  --------------------------------------------------
+  Guest:        Grace Alejo
+  Property:     Relaxing Double Room w/ 2 Shared Baths – Lindfield
+  Check-in:     Wed 18 Feb 2026
+  Check-out:    Mon 23 Feb 2026
+  Nights:       5
+  Platform:     airbnb2
+  Confirmation: HMMNYD8XSH
+
+  >> Grace Alejo booked "Relaxing Double Room w/ 2 Shared Baths – Lindfield" for 5 night(s)
+     from Wed 18 Feb 2026 to Mon 23 Feb 2026 via airbnb2.
+
+  Booking #68
+  --------------------------------------------------
+  Guest:        yeung lachlan
+  Property:     Elegant Double Ensuite Room - AC - 1Min to Central
+  Check-in:     Wed 18 Feb 2026
+  Check-out:    Wed 18 Feb 2026
+  Nights:       0
+  Platform:     bookingCom
+  Confirmation: BC-o94qPLK3B
+
+  >> yeung lachlan booked "Elegant Double Ensuite Room - AC - 1Min to Central" for 0 night(s)
+     from Wed 18 Feb 2026 to Wed 18 Feb 2026 via bookingCom.
+
+  Booking #69
+  --------------------------------------------------
+  Guest:        Hayley Chan
+  Property:     Simple Double Room Near UNSW w/External Kitchen
+  Check-in:     Wed 18 Feb 2026
+  Check-out:    Wed 18 Feb 2026
+  Nights:       0
+  Platform:     bookingCom
+  Confirmation: BC-VWOOGDLg5
+
+  >> Hayley Chan booked "Simple Double Room Near UNSW w/External Kitchen" for 0 night(s)
+     from Wed 18 Feb 2026 to Wed 18 Feb 2026 via bookingCom.
+
+  Booking #70
+  --------------------------------------------------
+  Guest:        ramaekers sam
+  Property:     Comfy Private Single Room - Near Shops & Eateries
+  Check-in:     Wed 18 Feb 2026
+  Check-out:    Thu 19 Feb 2026
+  Nights:       1
+  Platform:     bookingCom
+  Confirmation: BC-6yQ3kvo6R
+
+  >> ramaekers sam booked "Comfy Private Single Room - Near Shops & Eateries" for 1 night(s)
+     from Wed 18 Feb 2026 to Thu 19 Feb 2026 via bookingCom.
+
+  Booking #71
+  --------------------------------------------------
+  Guest:        Madeleine Greenwood
+  Property:     Cozy Queen Room -  Next to Stations & Shops
+  Check-in:     Wed 18 Feb 2026
+  Check-out:    Wed 04 Mar 2026
+  Nights:       14
+  Platform:     bookingCom
+  Confirmation: BC-YE2rXmYAO
+
+  >> Madeleine Greenwood booked "Cozy Queen Room -  Next to Stations & Shops" for 14 night(s)
+     from Wed 18 Feb 2026 to Wed 04 Mar 2026 via bookingCom.
+
+  Booking #72
+  --------------------------------------------------
+  Guest:        Hajrie Troka
+  Property:     Tranquil Queen Room - Centrally Located
+  Check-in:     Wed 18 Feb 2026
+  Check-out:    Tue 24 Feb 2026
+  Nights:       6
+  Platform:     airbnb2
+  Confirmation: HM4WDK3FCJ
+
+  >> Hajrie Troka booked "Tranquil Queen Room - Centrally Located" for 6 night(s)
+     from Wed 18 Feb 2026 to Tue 24 Feb 2026 via airbnb2.
+
+  Booking #73
+  --------------------------------------------------
+  Guest:        Kim & Mark Bowling
+  Property:     Rustic Charm - Private Queen Room Retreat
+  Check-in:     Wed 18 Feb 2026
+  Check-out:    Thu 19 Feb 2026
+  Nights:       1
+  Platform:     bookingCom
+  Confirmation: BC-pqGnP8Yo6
+
+  >> Kim & Mark Bowling booked "Rustic Charm - Private Queen Room Retreat" for 1 night(s)
+     from Wed 18 Feb 2026 to Thu 19 Feb 2026 via bookingCom.
+
+  Booking #74
+  --------------------------------------------------
+  Guest:        Benedict Jin
+  Property:     Affordable Double Room - Granville Budget Stay
+  Check-in:     Wed 18 Feb 2026
+  Check-out:    Thu 19 Feb 2026
+  Nights:       1
+  Platform:     bookingCom
+  Confirmation: BC-v74A5wyl5
+
+  >> Benedict Jin booked "Affordable Double Room - Granville Budget Stay" for 1 night(s)
+     from Wed 18 Feb 2026 to Thu 19 Feb 2026 via bookingCom.
+
+  Booking #75
+  --------------------------------------------------
+  Guest:        Craig Whalen
+  Property:     Inviting Double Room w/Ensuite Bath Sunlit Comfort
+  Check-in:     Wed 18 Feb 2026
+  Check-out:    Wed 18 Feb 2026
+  Nights:       0
+  Platform:     bookingCom
+  Confirmation: BC-4qw5VjkK7
+
+  >> Craig Whalen booked "Inviting Double Room w/Ensuite Bath Sunlit Comfort" for 0 night(s)
+     from Wed 18 Feb 2026 to Wed 18 Feb 2026 via bookingCom.
+
+  Booking #76
+  --------------------------------------------------
+  Guest:        Yvonne Yu
+  Property:     Light & Simple Single Room - Peakhurst Area
+  Check-in:     Wed 18 Feb 2026
+  Check-out:    Thu 19 Feb 2026
+  Nights:       1
+  Platform:     airbnb2
+  Confirmation: HMZ9NQBXW4
+
+  >> Yvonne Yu booked "Light & Simple Single Room - Peakhurst Area" for 1 night(s)
+     from Wed 18 Feb 2026 to Thu 19 Feb 2026 via airbnb2.
+
+  Booking #77
+  --------------------------------------------------
+  Guest:        Masoud Ghaderi
+  Property:     Detached Single Room - Surrounded by Nature
+  Check-in:     Wed 18 Feb 2026
+  Check-out:    Tue 24 Feb 2026
+  Nights:       6
+  Platform:     bookingCom
+  Confirmation: BC-PJ4p0YWJw
+
+  >> Masoud Ghaderi booked "Detached Single Room - Surrounded by Nature" for 6 night(s)
+     from Wed 18 Feb 2026 to Tue 24 Feb 2026 via bookingCom.
+
+  Booking #78
+  --------------------------------------------------
+  Guest:        Will O'Reilly
+  Property:     Standard Queen Room - Peaceful location
+  Check-in:     Wed 18 Feb 2026
+  Check-out:    Tue 24 Feb 2026
+  Nights:       6
+  Platform:     bookingCom
+  Confirmation: BC-oK13R5m1N
+
+  >> Will O'Reilly booked "Standard Queen Room - Peaceful location" for 6 night(s)
+     from Wed 18 Feb 2026 to Tue 24 Feb 2026 via bookingCom.
+
+  Booking #79
+  --------------------------------------------------
+  Guest:        Huyen Trang T Dao
+  Property:     Luxe Ensuite Queen Room - Nearby Station
+  Check-in:     Wed 18 Feb 2026
+  Check-out:    Fri 20 Feb 2026
+  Nights:       2
+  Platform:     airbnb2
+  Confirmation: HM2YBJN3XC
+
+  >> Huyen Trang T Dao booked "Luxe Ensuite Queen Room - Nearby Station" for 2 night(s)
+     from Wed 18 Feb 2026 to Fri 20 Feb 2026 via airbnb2.
+
+  Booking #80
+  --------------------------------------------------
+  Guest:        Lillian Carlon
+  Property:     Ensuite Queen Room - Close to Stations & Shops
+  Check-in:     Wed 18 Feb 2026
+  Check-out:    Thu 19 Feb 2026
+  Nights:       1
+  Platform:     bookingCom
+  Confirmation: BC-wx96Vy8Jg
+
+  >> Lillian Carlon booked "Ensuite Queen Room - Close to Stations & Shops" for 1 night(s)
+     from Wed 18 Feb 2026 to Thu 19 Feb 2026 via bookingCom.
+
+  Booking #81
+  --------------------------------------------------
+  Guest:        Oceane Bonvalot
+  Property:     Tranquil Double Room - Walk to Train & Nearby Eats
+  Check-in:     Wed 18 Feb 2026
+  Check-out:    Tue 24 Feb 2026
+  Nights:       6
+  Platform:     airbnb2
+  Confirmation: HMATKB3JXA
+
+  >> Oceane Bonvalot booked "Tranquil Double Room - Walk to Train & Nearby Eats" for 6 night(s)
+     from Wed 18 Feb 2026 to Tue 24 Feb 2026 via airbnb2.
+
+  Booking #82
+  --------------------------------------------------
+  Guest:        Jack Oleary
+  Property:     Standard Queen Room - Calm & Comfortable Stay
+  Check-in:     Wed 18 Feb 2026
+  Check-out:    Thu 19 Feb 2026
+  Nights:       1
+  Platform:     bookingCom
+  Confirmation: BC-9rv7v1lnx
+
+  >> Jack Oleary booked "Standard Queen Room - Calm & Comfortable Stay" for 1 night(s)
+     from Wed 18 Feb 2026 to Thu 19 Feb 2026 via bookingCom.
+
+  Booking #83
+  --------------------------------------------------
+  Guest:        Lena Rabot
+  Property:     Rustic Queen Room - Serene Spot
+  Check-in:     Wed 18 Feb 2026
+  Check-out:    Tue 24 Feb 2026
+  Nights:       6
+  Platform:     airbnb2
+  Confirmation: HM4P4HF4XQ
+
+  >> Lena Rabot booked "Rustic Queen Room - Serene Spot" for 6 night(s)
+     from Wed 18 Feb 2026 to Tue 24 Feb 2026 via airbnb2.
+
+  Booking #84
+  --------------------------------------------------
+  Guest:        Luke Boswell
+  Property:     Private Double Room Near Airport - Convenient Spot
+  Check-in:     Wed 18 Feb 2026
+  Check-out:    Fri 20 Feb 2026
+  Nights:       2
+  Platform:     airbnb2
+  Confirmation: HM2PXDD8KA
+
+  >> Luke Boswell booked "Private Double Room Near Airport - Convenient Spot" for 2 night(s)
+     from Wed 18 Feb 2026 to Fri 20 Feb 2026 via airbnb2.
+
+  Booking #85
+  --------------------------------------------------
+  Guest:        Manoj Poudel
+  Property:     Cozy Double Room - Close to Stations & Stores
+  Check-in:     Wed 18 Feb 2026
+  Check-out:    Wed 18 Feb 2026
+  Nights:       0
+  Platform:     airbnb2
+  Confirmation: HMY9ZEBJYT
+
+  >> Manoj Poudel booked "Cozy Double Room - Close to Stations & Stores" for 0 night(s)
+     from Wed 18 Feb 2026 to Wed 18 Feb 2026 via airbnb2.
+
+  Booking #86
+  --------------------------------------------------
+  Guest:        Hiroshi Matsumaru
+  Property:      Standard Single Room - Ideally Located
+  Check-in:     Wed 18 Feb 2026
+  Check-out:    Wed 18 Feb 2026
+  Nights:       0
+  Platform:     bookingCom
+  Confirmation: BC-l0V0lB976
+
+  >> Hiroshi Matsumaru booked " Standard Single Room - Ideally Located" for 0 night(s)
+     from Wed 18 Feb 2026 to Wed 18 Feb 2026 via bookingCom.
+
+  Booking #87
+  --------------------------------------------------
+  Guest:        지은 김
+  Property:     Large Queen Bedroom in Maroubra – Great Location
+  Check-in:     Wed 18 Feb 2026
+  Check-out:    Wed 18 Feb 2026
+  Nights:       0
+  Platform:     airbnb2
+  Confirmation: HMEMRTJPWA
+
+  >> 지은 김 booked "Large Queen Bedroom in Maroubra – Great Location" for 0 night(s)
+     from Wed 18 Feb 2026 to Wed 18 Feb 2026 via airbnb2.
+
+  Booking #88
+  --------------------------------------------------
+  Guest:        Bochen Dang
+  Property:     Transit-Friendly Studio - Direct to City & Beach  at Kingsford
+  Check-in:     Wed 18 Feb 2026
+  Check-out:    Thu 19 Feb 2026
+  Nights:       1
+  Platform:     bookingCom
+  Confirmation: BC-lLGnW8LyM
+
+  >> Bochen Dang booked "Transit-Friendly Studio - Direct to City & Beach  at Kingsford" for 1 night(s)
+     from Wed 18 Feb 2026 to Thu 19 Feb 2026 via bookingCom.
+
+  Booking #89
+  --------------------------------------------------
+  Guest:        Ting Ching Poon
+  Property:     Cozy Single Room -  Close to Station & Eateries
+  Check-in:     Wed 18 Feb 2026
+  Check-out:    Fri 20 Feb 2026
+  Nights:       2
+  Platform:     bookingCom
+  Confirmation: BC-Arv1YVVG9
+
+  >> Ting Ching Poon booked "Cozy Single Room -  Close to Station & Eateries" for 2 night(s)
+     from Wed 18 Feb 2026 to Fri 20 Feb 2026 via bookingCom.
+
+  Booking #90
+  --------------------------------------------------
+  Guest:        Ahmed Saheem Momand
+  Property:     Comfy Double Room - Nearby Station & Olympic Park
+  Check-in:     Wed 18 Feb 2026
+  Check-out:    Thu 19 Feb 2026
+  Nights:       1
+  Platform:     airbnb2
+  Confirmation: HMBQFJM9HS
+
+  >> Ahmed Saheem Momand booked "Comfy Double Room - Nearby Station & Olympic Park" for 1 night(s)
+     from Wed 18 Feb 2026 to Thu 19 Feb 2026 via airbnb2.
+
+  Booking #91
+  --------------------------------------------------
+  Guest:        Joe Boopalan
+  Property:     Queen Room Retreat - Easy Access Location
+  Check-in:     Wed 18 Feb 2026
+  Check-out:    Sat 21 Feb 2026
+  Nights:       3
+  Platform:     airbnb2
+  Confirmation: HMFRC93TZK
+
+  >> Joe Boopalan booked "Queen Room Retreat - Easy Access Location" for 3 night(s)
+     from Wed 18 Feb 2026 to Sat 21 Feb 2026 via airbnb2.
+
+  Booking #92
+  --------------------------------------------------
+  Guest:        Beatriz Anhaia
+  Property:     Conveniently Located Double Room Near Eastwood
+  Check-in:     Wed 18 Feb 2026
+  Check-out:    Thu 19 Feb 2026
+  Nights:       1
+  Platform:     airbnb2
+  Confirmation: HMJH22KRCH
+
+  >> Beatriz Anhaia booked "Conveniently Located Double Room Near Eastwood" for 1 night(s)
+     from Wed 18 Feb 2026 to Thu 19 Feb 2026 via airbnb2.
+
+  Booking #93
+  --------------------------------------------------
+  Guest:        Robert Obiano
+  Property:     Comfy Double Room - Nearby Stations & Shops
+  Check-in:     Wed 18 Feb 2026
+  Check-out:    Fri 20 Feb 2026
+  Nights:       2
+  Platform:     airbnb2
+  Confirmation: HM988244TT
+
+  >> Robert Obiano booked "Comfy Double Room - Nearby Stations & Shops" for 2 night(s)
+     from Wed 18 Feb 2026 to Fri 20 Feb 2026 via airbnb2.
+
+  Booking #94
+  --------------------------------------------------
+  Guest:        Gourab Nath
+  Property:     Homely Ensuite Double Room in Gregory Hills
+  Check-in:     Wed 18 Feb 2026
+  Check-out:    Thu 19 Feb 2026
+  Nights:       1
+  Platform:     bookingCom
+  Confirmation: BC-zAWXL0PwO
+
+  >> Gourab Nath booked "Homely Ensuite Double Room in Gregory Hills" for 1 night(s)
+     from Wed 18 Feb 2026 to Thu 19 Feb 2026 via bookingCom.
+
+  Booking #95
+  --------------------------------------------------
+  Guest:        Kaye Anderson
+  Property:     Simple & Affordable Detached Double Room - Killara
+  Check-in:     Wed 18 Feb 2026
+  Check-out:    Wed 18 Feb 2026
+  Nights:       0
+  Platform:     bookingCom
+  Confirmation: BC-2q4Rvjwrz
+
+  >> Kaye Anderson booked "Simple & Affordable Detached Double Room - Killara" for 0 night(s)
+     from Wed 18 Feb 2026 to Wed 18 Feb 2026 via bookingCom.
+
+  Booking #96
+  --------------------------------------------------
+  Guest:        Magaly Benoit
+  Property:     Elegant Double Room - Mins to Transport and Stores
+  Check-in:     Wed 18 Feb 2026
+  Check-out:    Wed 18 Feb 2026
+  Nights:       0
+  Platform:     bookingCom
+  Confirmation: BC-Vk8QOoY21
+
+  >> Magaly Benoit booked "Elegant Double Room - Mins to Transport and Stores" for 0 night(s)
+     from Wed 18 Feb 2026 to Wed 18 Feb 2026 via bookingCom.
+
+  Booking #97
+  --------------------------------------------------
+  Guest:        Awud Deng
+  Property:     Cozy Private Single Room - Nearby Station & Shops
+  Check-in:     Wed 18 Feb 2026
+  Check-out:    Fri 20 Feb 2026
+  Nights:       2
+  Platform:     bookingCom
+  Confirmation: BC-0BjnJn4wK
+
+  >> Awud Deng booked "Cozy Private Single Room - Nearby Station & Shops" for 2 night(s)
+     from Wed 18 Feb 2026 to Fri 20 Feb 2026 via bookingCom.
+
+  Booking #98
+  --------------------------------------------------
+  Guest:        Marcus Bullmore
+  Property:     Affordable Single Room Stay – Quiet Lindfield
+  Check-in:     Wed 18 Feb 2026
+  Check-out:    Wed 18 Feb 2026
+  Nights:       0
+  Platform:     bookingCom
+  Confirmation: BC-lVQWg8mj6
+
+  >> Marcus Bullmore booked "Affordable Single Room Stay – Quiet Lindfield" for 0 night(s)
+     from Wed 18 Feb 2026 to Wed 18 Feb 2026 via bookingCom.
+
+  Booking #99
+  --------------------------------------------------
+  Guest:        Miloslav Rousek
+  Property:     Elegant Single Room - Mins to Airport& UNSW
+  Check-in:     Wed 18 Feb 2026
+  Check-out:    Thu 19 Feb 2026
+  Nights:       1
+  Platform:     bookingCom
+  Confirmation: BC-LlLArjQwp
+
+  >> Miloslav Rousek booked "Elegant Single Room - Mins to Airport& UNSW" for 1 night(s)
+     from Wed 18 Feb 2026 to Thu 19 Feb 2026 via bookingCom.
+
+  Booking #100
+  --------------------------------------------------
+  Guest:        Heiko Guenther
+  Property:     Ensuite King Single Room - A/C - Next to Central
+  Check-in:     Thu 19 Feb 2026
+  Check-out:    Sun 22 Feb 2026
+  Nights:       3
+  Platform:     bookingCom
+  Confirmation: BC-68QzKnGEN
+
+  >> Heiko Guenther booked "Ensuite King Single Room - A/C - Next to Central" for 3 night(s)
+     from Thu 19 Feb 2026 to Sun 22 Feb 2026 via bookingCom.
+
+=================================================================
+  BOOKINGS PER PROPERTY
+=================================================================
+
+  Double Bed (1 booking(s))
+    - Thi Vu: Wed 18 Feb 2026 to Tue 24 Feb 2026
+
+  Ensuite King Single Room - A/C - Next to Central (2 booking(s))
+    - Ian Penales: Wed 18 Feb 2026 to Sat 21 Feb 2026
+    - Heiko Guenther: Thu 19 Feb 2026 to Sun 22 Feb 2026
+
+  Comfy Private Queen Room - Nearby Station & Shops (1 booking(s))
+    - Ray Cook: Wed 18 Feb 2026 to Mon 23 Feb 2026
+
+  Tranquil Double Room - Next to Bus Station & Park (1 booking(s))
+    - Shoko Kondo: Wed 18 Feb 2026 to Fri 20 Feb 2026
+
+  Detached Double Room - Seconds to Transport (1 booking(s))
+    - Yuk Lam Ng: Wed 18 Feb 2026 to Fri 27 Feb 2026
+
+  Comfortable Double Room with 2 Beds in Eastwood (1 booking(s))
+    - Châm Đàm: Wed 18 Feb 2026 to Sat 21 Feb 2026
+
+  Budget Twin Room in Belmore - Convenient Stay (1 booking(s))
+    - Istvan Teli: Wed 18 Feb 2026 to Fri 20 Feb 2026
+
+  Quaint Double Room - Seconds to Shops & Eateries (1 booking(s))
+    - Zhenxin Zhao: Wed 18 Feb 2026 to Sun 22 Feb 2026
+
+  Elegant Double Ensuite Room - AC - 1Min to Central (3 booking(s))
+    - Jake Duncan: Wed 18 Feb 2026 to Sun 22 Feb 2026
+    - Matilde Puga: Wed 18 Feb 2026 to Fri 20 Feb 2026
+    - yeung lachlan: Wed 18 Feb 2026 to Wed 18 Feb 2026
+
+  Sleek & Comfortable Single Room at Revesby (2 booking(s))
+    - Robin Ferreira: Wed 18 Feb 2026 to Tue 24 Feb 2026
+    - Vinicius Trevizani Caberlon: Wed 18 Feb 2026 to Thu 26 Feb 2026
+
+  Modern Double Ensuite Room - A/C - Next to Central (1 booking(s))
+    - Brahnda Eleazar: Wed 18 Feb 2026 to Fri 20 Feb 2026
+
+  Compact & Comfortable Single Stay - Great Location (1 booking(s))
+    - Sanjay Parbhoo: Wed 18 Feb 2026 to Thu 19 Feb 2026
+
+  Deluxe Double Room - Seconds to Central Station (1 booking(s))
+    - Adrian Parkinson: Wed 18 Feb 2026 to Mon 23 Feb 2026
+
+  Simple 2-Double Bed Studio Stay - Peakhurst (1 booking(s))
+    - CHING-WEN WANG: Wed 18 Feb 2026 to Sat 21 Feb 2026
+
+  Classic Double Ensuite Room - Central Location - AC (1 booking(s))
+    - 충재 이: Wed 18 Feb 2026 to Sat 21 Feb 2026
+
+  Large Quad Room with Private Bathroom - Great Spot (1 booking(s))
+    - Ruth Bedford: Wed 18 Feb 2026 to Thu 19 Feb 2026
+
+  Well-located Single Room in Cabramatta (1 booking(s))
+    - Dac Tran: Wed 18 Feb 2026 to Sun 22 Feb 2026
+
+  Luminous Queen Room – Close to Airport & UNSW (1 booking(s))
+    - Jenny Tran: Wed 18 Feb 2026 to Thu 19 Feb 2026
+
+  Courtyard Double Room Near Top Ryde Shopping Centre (1 booking(s))
+    - Asmita Shrestha: Wed 18 Feb 2026 to Sat 21 Feb 2026
+
+  Luxe Ensuite Double Room - A/C - Next to Central (2 booking(s))
+    - 恩慈 林: Wed 18 Feb 2026 to Fri 20 Feb 2026
+    - Katrina Hampson: Wed 18 Feb 2026 to Wed 18 Feb 2026
+
+  Peaceful King Single Room Near Attractions (1 booking(s))
+    - James Hammond: Wed 18 Feb 2026 to Thu 19 Feb 2026
+
+  Elegant Double Stay - AC - Heart of the City (1 booking(s))
+    - Clélia Gregorio: Wed 18 Feb 2026 to Sat 21 Feb 2026
+
+  Private Double Room Steps from UNSW & Light Rail (1 booking(s))
+    - Matthieu Gautier: Wed 18 Feb 2026 to Thu 19 Feb 2026
+
+  Single Room - Private Spot - Convenient Location (2 booking(s))
+    - Caroline Touchet: Wed 18 Feb 2026 to Mon 02 Mar 2026
+    - XIANG GAO: Wed 18 Feb 2026 to Wed 18 Feb 2026
+
+  Private Single Room - Mins to Train Station (1 booking(s))
+    - Athan Stephandellis: Wed 18 Feb 2026 to Tue 24 Feb 2026
+
+  Peaceful & Central Stay - Private Double Room (1 booking(s))
+    - Joki Wong: Wed 18 Feb 2026 to Thu 19 Feb 2026
+
+  Luxe King Single Ensuite Room - AC - Next to CBD (1 booking(s))
+    - Olivia Phelps: Wed 18 Feb 2026 to Wed 18 Feb 2026
+
+  Double Bed Surry Hills Stay | Ensuite Bath (1 booking(s))
+    - Vong Chikiet: Wed 18 Feb 2026 to Thu 19 Feb 2026
+
+  Double Room - Next to the Station (1 booking(s))
+    - 晨怡 盛: Wed 18 Feb 2026 to Fri 20 Feb 2026
+
+  Single Room - Quaint Spot - Centrally Located - Shared Bathroom (1 booking(s))
+    - Tuo Chen: Wed 18 Feb 2026 to Wed 18 Feb 2026
+
+  Waterfront Studio Room for Four - Premium Stay (1 booking(s))
+    - Nicholas Mair: Wed 18 Feb 2026 to Wed 18 Feb 2026
+
+  Inviting Ensuite Double Room with AC - Surry Hills (1 booking(s))
+    - Jaclyn Ely: Wed 18 Feb 2026 to Wed 18 Feb 2026
+
+  Boutique Double Room - Centrally Located (1 booking(s))
+    - FENZHI WEN: Wed 18 Feb 2026 to Wed 18 Feb 2026
+
+  Budget Double Room in Belmore - Convenient Stay (1 booking(s))
+    - Minol Jayakody: Wed 18 Feb 2026 to Sun 22 Feb 2026
+
+  Elegant Apt - 2BR - A/C - Centrally Located (1 booking(s))
+    - Duc Thang Ha: Wed 18 Feb 2026 to Sun 22 Feb 2026
+
+  Light & Simple Double Room - Peakhurst Area (1 booking(s))
+    - Daniel Osorio: Wed 18 Feb 2026 to Sat 21 Feb 2026
+
+  Boutique Double Room Near Light Rail (1 booking(s))
+    - Marc Fehrenbach: Wed 18 Feb 2026 to Sun 01 Mar 2026
+
+  Double Room in a Convenient Central Location (1 booking(s))
+    - Amogh Agarwal: Wed 18 Feb 2026 to Sat 21 Feb 2026
+
+  Prime Double Room - AC - Seconds to Central/CBD (1 booking(s))
+    - Esther Boonmee: Wed 18 Feb 2026 to Thu 19 Feb 2026
+
+  Welcoming Double Room w/Ensuite Bath - Surry Hills (1 booking(s))
+    - Sherralyn Hill: Wed 18 Feb 2026 to Wed 18 Feb 2026
+
+  Basic Double Room in Liverpool – Affordable Stay (1 booking(s))
+    - Eimear Kilcullen: Wed 18 Feb 2026 to Sat 21 Feb 2026
+
+  Kensington Double Room Near Light Rail & UNSW (1 booking(s))
+    - Scott Tabram: Wed 18 Feb 2026 to Fri 20 Feb 2026
+
+  Cozy Single Room - A/C - Next to Central Station (1 booking(s))
+    - Thamani Wijesinghe: Wed 18 Feb 2026 to Wed 18 Feb 2026
+
+  Peaceful Double Room | Near Parks & Transit (1 booking(s))
+    - Hadia Binte Mujib: Wed 18 Feb 2026 to Fri 20 Feb 2026
+
+  Luxe Waterview Double Room - Ideal for Relaxation (1 booking(s))
+    - Joanne Brancourt: Wed 18 Feb 2026 to Wed 18 Feb 2026
+
+  Cozy Queen Room -  Next to Stations & Shops (2 booking(s))
+    - Ynyr Jones: Wed 18 Feb 2026 to Sat 21 Feb 2026
+    - Madeleine Greenwood: Wed 18 Feb 2026 to Wed 04 Mar 2026
+
+  Ensuite Double Room – Nearby CBD/UTS/USYD (1 booking(s))
+    - Kim Wiesner: Wed 18 Feb 2026 to Wed 18 Feb 2026
+
+  Homely Auburn 2BR - Fast Access to Sydney & Beyond (1 booking(s))
+    - 桂庭 郭: Wed 18 Feb 2026 to Mon 23 Feb 2026
+
+  Comfort & Calm - Queen Room on a Quiet Crescent (1 booking(s))
+    - Justine Ibars: Wed 18 Feb 2026 to Sat 28 Feb 2026
+
+  Well-Situated Double Room Near Hurstville Station  (1 booking(s))
+    - Luna Daine: Wed 18 Feb 2026 to Fri 20 Feb 2026
+
+  Modern Single Room - A/C - 1Min Walk to Central (1 booking(s))
+    - Ann-Maree Chandler: Wed 18 Feb 2026 to Thu 19 Feb 2026
+
+  Spacious Quadruple Room – Nearby Station & Park (1 booking(s))
+    - Alicja Budnik: Wed 18 Feb 2026 to Thu 19 Feb 2026
+
+  Tranquil Double Room - Close to Stations & Shops (1 booking(s))
+    - Sandesh Chand: Wed 18 Feb 2026 to Wed 18 Feb 2026
+
+  Inviting Double Room - A Peaceful Budget Stay in Padstow - Shared Bathroom (1 booking(s))
+    - Charline Legrand: Wed 18 Feb 2026 to Sun 01 Mar 2026
+
+  Private Queen Retreat - Steps from Shops & Transit (1 booking(s))
+    - Anastasiya ANIKEICHYK: Wed 18 Feb 2026 to Mon 23 Feb 2026
+
+  Double Room - Private Spot - Near Transport (1 booking(s))
+    - Ali Erkoc: Wed 18 Feb 2026 to Wed 18 Feb 2026
+
+  Bright and Spacious Queen Room in Narwee (1 booking(s))
+    - Aurore Mootz: Wed 18 Feb 2026 to Sat 21 Feb 2026
+
+  Kensington Double Room - Central & Affordable (1 booking(s))
+    - YIWEI ZHENG: Wed 18 Feb 2026 to Wed 18 Feb 2026
+
+  Detached King Bed Studio w/ Ensuite Bath & Kitchen (1 booking(s))
+    - Amine Khadir: Wed 18 Feb 2026 to Tue 24 Feb 2026
+
+  Private Single Room - Central Location (1 booking(s))
+    - Patrick Brown: Wed 18 Feb 2026 to Tue 24 Feb 2026
+
+  Chic Double Room - A/C - Centrally Located of SYD (1 booking(s))
+    - Kate Millward: Wed 18 Feb 2026 to Wed 18 Feb 2026
+
+  Double Room with Rustic Charm - Great Location (1 booking(s))
+    - Timothy Curchod: Wed 18 Feb 2026 to Wed 18 Feb 2026
+
+  Relaxing Double Room w/ 2 Shared Baths – Lindfield (1 booking(s))
+    - Grace Alejo: Wed 18 Feb 2026 to Mon 23 Feb 2026
+
+  Simple Double Room Near UNSW w/External Kitchen (1 booking(s))
+    - Hayley Chan: Wed 18 Feb 2026 to Wed 18 Feb 2026
+
+  Comfy Private Single Room - Near Shops & Eateries (1 booking(s))
+    - ramaekers sam: Wed 18 Feb 2026 to Thu 19 Feb 2026
+
+  Tranquil Queen Room - Centrally Located (1 booking(s))
+    - Hajrie Troka: Wed 18 Feb 2026 to Tue 24 Feb 2026
+
+  Rustic Charm - Private Queen Room Retreat (1 booking(s))
+    - Kim & Mark Bowling: Wed 18 Feb 2026 to Thu 19 Feb 2026
+
+  Affordable Double Room - Granville Budget Stay (1 booking(s))
+    - Benedict Jin: Wed 18 Feb 2026 to Thu 19 Feb 2026
+
+  Inviting Double Room w/Ensuite Bath Sunlit Comfort (1 booking(s))
+    - Craig Whalen: Wed 18 Feb 2026 to Wed 18 Feb 2026
+
+  Light & Simple Single Room - Peakhurst Area (1 booking(s))
+    - Yvonne Yu: Wed 18 Feb 2026 to Thu 19 Feb 2026
+
+  Detached Single Room - Surrounded by Nature (1 booking(s))
+    - Masoud Ghaderi: Wed 18 Feb 2026 to Tue 24 Feb 2026
+
+  Standard Queen Room - Peaceful location (1 booking(s))
+    - Will O'Reilly: Wed 18 Feb 2026 to Tue 24 Feb 2026
+
+  Luxe Ensuite Queen Room - Nearby Station (1 booking(s))
+    - Huyen Trang T Dao: Wed 18 Feb 2026 to Fri 20 Feb 2026
+
+  Ensuite Queen Room - Close to Stations & Shops (1 booking(s))
+    - Lillian Carlon: Wed 18 Feb 2026 to Thu 19 Feb 2026
+
+  Tranquil Double Room - Walk to Train & Nearby Eats (1 booking(s))
+    - Oceane Bonvalot: Wed 18 Feb 2026 to Tue 24 Feb 2026
+
+  Standard Queen Room - Calm & Comfortable Stay (1 booking(s))
+    - Jack Oleary: Wed 18 Feb 2026 to Thu 19 Feb 2026
+
+  Rustic Queen Room - Serene Spot (1 booking(s))
+    - Lena Rabot: Wed 18 Feb 2026 to Tue 24 Feb 2026
+
+  Private Double Room Near Airport - Convenient Spot (1 booking(s))
+    - Luke Boswell: Wed 18 Feb 2026 to Fri 20 Feb 2026
+
+  Cozy Double Room - Close to Stations & Stores (1 booking(s))
+    - Manoj Poudel: Wed 18 Feb 2026 to Wed 18 Feb 2026
+
+   Standard Single Room - Ideally Located (1 booking(s))
+    - Hiroshi Matsumaru: Wed 18 Feb 2026 to Wed 18 Feb 2026
+
+  Large Queen Bedroom in Maroubra – Great Location (1 booking(s))
+    - 지은 김: Wed 18 Feb 2026 to Wed 18 Feb 2026
+
+  Transit-Friendly Studio - Direct to City & Beach  at Kingsford (1 booking(s))
+    - Bochen Dang: Wed 18 Feb 2026 to Thu 19 Feb 2026
+
+  Cozy Single Room -  Close to Station & Eateries (1 booking(s))
+    - Ting Ching Poon: Wed 18 Feb 2026 to Fri 20 Feb 2026
+
+  Comfy Double Room - Nearby Station & Olympic Park (1 booking(s))
+    - Ahmed Saheem Momand: Wed 18 Feb 2026 to Thu 19 Feb 2026
+
+  Queen Room Retreat - Easy Access Location (1 booking(s))
+    - Joe Boopalan: Wed 18 Feb 2026 to Sat 21 Feb 2026
+
+  Conveniently Located Double Room Near Eastwood (1 booking(s))
+    - Beatriz Anhaia: Wed 18 Feb 2026 to Thu 19 Feb 2026
+
+  Comfy Double Room - Nearby Stations & Shops (1 booking(s))
+    - Robert Obiano: Wed 18 Feb 2026 to Fri 20 Feb 2026
+
+  Homely Ensuite Double Room in Gregory Hills (1 booking(s))
+    - Gourab Nath: Wed 18 Feb 2026 to Thu 19 Feb 2026
+
+  Simple & Affordable Detached Double Room - Killara (1 booking(s))
+    - Kaye Anderson: Wed 18 Feb 2026 to Wed 18 Feb 2026
+
+  Elegant Double Room - Mins to Transport and Stores (1 booking(s))
+    - Magaly Benoit: Wed 18 Feb 2026 to Wed 18 Feb 2026
+
+  Cozy Private Single Room - Nearby Station & Shops (1 booking(s))
+    - Awud Deng: Wed 18 Feb 2026 to Fri 20 Feb 2026
+
+  Affordable Single Room Stay – Quiet Lindfield (1 booking(s))
+    - Marcus Bullmore: Wed 18 Feb 2026 to Wed 18 Feb 2026
+
+  Elegant Single Room - Mins to Airport& UNSW (1 booking(s))
+    - Miloslav Rousek: Wed 18 Feb 2026 to Thu 19 Feb 2026
+
+=================================================================
+  END OF REPORT
+=================================================================
