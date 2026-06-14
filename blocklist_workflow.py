@@ -93,21 +93,9 @@ def confirm_blocklisted(guest_id: str) -> bool:
 
 def get_reservations(guest_id: str) -> list[dict]:
     """
-    Returns ALL reservations linked to guest_id, fully paginated (past, current, future).
-    Used by the batch run() workflow which needs a complete historical picture.
+    Returns current and future reservations for guest_id (checkOut >= today).
     """
-    return reservations.get_all_by_guest(guest_id)
-
-
-def get_current_and_future_reservations(guest_id: str) -> list[dict]:
-    """
-    Returns only current and future reservations for guest_id (checkOut >= today).
-    Past reservations are excluded.
-
-    Used by Trigger 1 (guest.updated — blocklisted tag added) so that flagging
-    is applied only to upcoming and in-progress stays, not completed ones.
-    """
-    return reservations.get_current_and_future_by_guest(guest_id)
+    return reservations.get_active_by_guest(guest_id)
 
 
 # ─────────────────────────────────────────────────────────────────────────────
@@ -141,7 +129,7 @@ def flag_reservation_custom_fields(reservation_id: str) -> dict:
 
 def run():
     """
-    Main workflow entry point. Can be called from main.py or run directly.
+    Main workflow entry point. Run directly: python blocklist_workflow.py
     """
     validate()
 
@@ -184,7 +172,7 @@ def run():
             print(f"    No reservations found.")
             continue
 
-        print(f"    Found {len(guest_reservations)} reservation(s).")
+        print(f"    Found {len(guest_reservations)} current/future reservation(s).")
 
         # ── Steps 4 & 5: fetch custom fields then PUT each reservation ───────────
         for res in guest_reservations:

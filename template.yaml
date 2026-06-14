@@ -1,64 +1,108 @@
 AWSTemplateFormatVersion: "2010-09-09"
 Transform: AWS::Serverless-2016-10-31
-Description: Guesty blocklist webhook — API Gateway + Lambda
 
-# ── Globals ───────────────────────────────────────────────────────────────────
+Description: Guesty webhook receiver — Lambda + API Gateway
+
+# ── Parameters (override at deploy time) ──────────────────────────────────────
+Parameters:
+  GuestyClientId:
+    Type: AWS::SSM::Parameter::Value<String>
+    Default: /guesty/client_id
+    Description: SSM parameter holding your Guesty OAuth client ID
+
+  GuestyClientSecret:
+    Type: AWS::SSM::Parameter::Value<String>
+    Default: /guesty/client_secret
+    Description: SSM parameter holding your Guesty OAuth client secret
+
+  GuestyWebhookSecret:
+    Type: AWS::SSM::Parameter::Value<String>
+    Default: /guesty/webhook_secret
+    Description: SSM parameter holding the optional HMAC webhook secret
+
+  LogLevel:
+    Type: String
+    Default: INFO
+    AllowedValues: [DEBUG, INFO, WARNING, ERROR]
+
+# ── Globals shared by all functions ───────────────────────────────────────────
 Globals:
   Function:
     Runtime: python3.12
-    Timeout: 30          # Guesty may have multiple reservations to update
-    MemorySize: 128
+    Timeout: 30          # Guesty expects a response quickly; heavy work is async
+    MemorySize: 256
     Environment:
       Variables:
-        # Credentials — resolved from SSM at deploy time
-        GUESTY_CLIENT_ID:     "{{resolve:ssm:/guesty/client_id}}"
-        GUESTY_CLIENT_SECRET: "{{resolve:ssm:/guesty/client_secret}}"
-        GUESTY_WEBHOOK_SECRET: "{{resolve:ssm:/guesty/webhook_secret}}"
-        # SSM path where the OAuth token cache is stored at runtime
-        TOKEN_CACHE_SSM_PARAM: /guesty/token_cache
-        LOG_LEVEL: INFO
+        GUESTY_CLIENT_ID: !Ref GuestyClientId
+        GUESTY_CLIENT_SECRET: !Ref GuestyClientSecret
+        GUESTY_WEBHOOK_SECRET: !Ref GuestyWebhookSecret
+        GUESTY_BASE_URL: "https://open-api.guesty.com"
+        GUESTY_TOKEN_URL: "https://open-api.guesty.com/oauth2/token"
+        TOKEN_SSM_PARAM: "/guesty/token_cache"
+        LOG_LEVEL: !Ref LogLevel
 
-# ── Resources ─────────────────────────────────────────────────────────────────
+# ── Resources ──────────────────────────────────────────────────────────────────
 Resources:
 
+  # ── Lambda function ──────────────────────────────────────────────────────────
   GuestyWebhookFunction:
     Type: AWS::Serverless::Function
     Properties:
       FunctionName: guesty-webhook
-      Handler: lambda_handler.handler
-      Description: "Receives Guesty webhook events and enforces the blocklist custom field"
+      Handler: lambda_handler.lambda_handler
+      CodeUri: .                   # SAM zips this directory; see .samignore below
+      Description: Handles Guesty guest/reservation webhook events
       Policies:
-        # Read the three credential parameters
         - SSMParameterReadPolicy:
-            ParameterName: "guesty/client_id"
-        - SSMParameterReadPolicy:
-            ParameterName: "guesty/client_secret"
-        - SSMParameterReadPolicy:
-            ParameterName: "guesty/webhook_secret"
-        # Read AND write the token cache parameter
+            ParameterName: "guesty/*"
         - Statement:
-            Effect: Allow
-            Action:
-              - ssm:GetParameter
-              - ssm:PutParameter
-            Resource: !Sub "arn:aws:ssm:${AWS::Region}:${AWS::AccountId}:parameter/guesty/token_cache"
+            - Effect: Allow
+              Action:
+                - ssm:PutParameter
+              Resource: !Sub "arn:aws:ssm:${AWS::Region}:${AWS::AccountId}:parameter/guesty/*"
       Events:
         WebhookPost:
-          Type: HttpApi
+          Type: Api
           Properties:
+            RestApiId: !Ref GuestyApi
             Path: /webhook
             Method: POST
         HealthGet:
-          Type: HttpApi
+          Type: Api
           Properties:
+            RestApiId: !Ref GuestyApi
             Path: /health
             Method: GET
 
-# ── Outputs ───────────────────────────────────────────────────────────────────
+  # ── API Gateway ──────────────────────────────────────────────────────────────
+  GuestyApi:
+    Type: AWS::Serverless::Api
+    Properties:
+      Name: guesty-webhook-api
+      StageName: prod
+      Description: Public HTTPS endpoint for Guesty webhook callbacks
+
+  # ── SSM token cache parameter (created empty; auth.py writes to it at runtime) ─
+  TokenCacheParam:
+    Type: AWS::SSM::Parameter
+    Properties:
+      Name: /guesty/token_cache
+      Type: String
+      Value: '{"token": null, "expires_at": 0}'
+      Description: Guesty OAuth token cache for Lambda (managed by auth.py)
+
+# ── Outputs ────────────────────────────────────────────────────────────────────
 Outputs:
   WebhookUrl:
-    Description: "Register this URL in Guesty Dashboard → Integrations → Webhooks"
-    Value: !Sub "https://${ServerlessHttpApi}.execute-api.${AWS::Region}.amazonaws.com/webhook"
+    Description: >
+      Register this URL in Guesty Dashboard → Integrations → Webhooks.
+      Subscribe to: guest.updated, guest.created, guest.deleted, reservation.new
+    Value: !Sub "https://${GuestyApi}.execute-api.${AWS::Region}.amazonaws.com/prod/webhook"
+
   HealthUrl:
-    Description: "Liveness probe"
-    Value: !Sub "https://${ServerlessHttpApi}.execute-api.${AWS::Region}.amazonaws.com/health"
+    Description: Liveness probe endpoint
+    Value: !Sub "https://${GuestyApi}.execute-api.${AWS::Region}.amazonaws.com/prod/health"
+
+  FunctionArn:
+    Description: Lambda function ARN
+    Value: !GetAtt GuestyWebhookFunction.Arn
