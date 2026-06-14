@@ -1,6 +1,6 @@
 # Guesty API Client
 
-Python client for the [Guesty Open API](https://open-api-docs.guesty.com) with OAuth 2.0 authentication, token caching, modular model structure, and automated blocklist enforcement via webhooks.
+Python client for the [Guesty Open API](https://open-api-docs.guesty.com) with OAuth 2.0 authentication, token caching, modular model structure, and automated blocklist enforcement via webhooks deployed on AWS Lambda.
 
 ---
 
@@ -8,27 +8,30 @@ Python client for the [Guesty Open API](https://open-api-docs.guesty.com) with O
 
 ```mermaid
 flowchart TD
-    A[main.py] -->|1. Load credentials| B[settings.py]
-    B -->|Reads| C[.env file]
-    A -->|2. validate credentials| B
-    A -->|3. Call API models| D[listings.py\nreservations.py\nguests.py]
-    D -->|4. make_request| E[client.py]
-    E -->|5. Get Bearer token| F[auth.py]
-    F -->|Check cache| G{.token_cache.json\nvalid?}
+    A1[blocklist_workflow.py\nlocal / scheduled] -->|1. validate credentials| B[settings.py]
+    A2[lambda_handler.py\nAWS Lambda] -->|1. validate credentials| B
+    B -->|Reads| C[.env / Lambda env vars]
+    A1 -->|2. Call API models| D[guests.py\nreservations.py]
+    A2 -->|2. Call API models| D
+    D -->|3. make_request| E[client.py]
+    E -->|4. Get Bearer token| F[auth.py]
+    F -->|Check environment| ENV{Running in\nAWS Lambda?}
+    ENV -->|Yes| SSM[Load/Save token\nSSM Parameter Store]
+    ENV -->|No| DISK[Load/Save token\n.token_cache.json]
+    SSM --> G{Token\nvalid?}
+    DISK --> G
     G -->|Yes| H[Return cached token]
     G -->|No| I[POST /oauth2/token]
     I -->|Client ID + Secret| J[Guesty OAuth Server]
     J -->|Access token| F
-    F -->|Save to disk| K[.token_cache.json]
     H --> E
     F --> E
-    E -->|6. Authenticated HTTP request| L[Guesty Open API]
+    E -->|5. Authenticated HTTP request| L[Guesty Open API]
     L -->|JSON response| E
     E -->|Parsed JSON| D
-    D -->|Results| A
-    A -->|7. Print results| M[Console Output]
+    D -->|Results| A1
+    D -->|Results| A2
 ```
-
 
 ---
 
@@ -52,13 +55,13 @@ There is no native Guesty feature to automatically tick the custom field when th
 ```mermaid
 flowchart TD
     A[User adds 'blocklisted' tag\nto guest in Guesty] --> B[guest.updated webhook fires]
-    B --> C[webhook_server.py receives event]
+    B --> C[lambda_handler.py receives event\nvia API Gateway POST /webhook]
     C --> D{Was tag already\npresent before?}
     D -->|Yes — no change| E[No action]
     D -->|No — newly added| F[confirm_blocklisted\nGET /v1/guests-crud/id]
     F --> G{Tag confirmed\non live record?}
     G -->|No| H[Skip — log warning]
-    G -->|Yes| I[get_reservations\nfetch ALL past + current + future]
+    G -->|Yes| I[get_reservations\nfetch current + future only\ncheckOut >= today]
     I --> J[For each reservation]
     J --> K[PUT /v1/reservations/id/custom-fields\nBlacklisted = yes]
     K --> L[Automated messages blocked\nby custom field condition]
@@ -69,7 +72,7 @@ flowchart TD
 ```mermaid
 flowchart TD
     A[Blocklisted guest makes\na new reservation] --> B[reservation.new webhook fires]
-    B --> C[webhook_server.py receives event]
+    B --> C[lambda_handler.py receives event\nvia API Gateway POST /webhook]
     C --> D[Extract guestId\nfrom reservation payload]
     D --> E[confirm_blocklisted\nGET /v1/guests-crud/id]
     E --> F{Guest has\n'blocklisted' tag?}
@@ -93,18 +96,19 @@ python blocklist_workflow.py
 ```
 Guesty-API/
 ├── .env                    # Your credentials (never commit this)
-├── .env.example            # Template for credentials
+├── env.example             # Template for credentials
 ├── .gitignore
-├── .token_cache.json       # Cached OAuth token (auto-generated, never commit)
+├── .samignore              # Files excluded from SAM deployment zip
 ├── requirements.txt
-├── main.py                 # Entry point / connection test
-├── settings.py             # Loads .env into variables
-├── auth.py                 # OAuth token fetching & disk-based caching
+├── template.yaml           # AWS SAM template (Lambda + API Gateway)
+├── DEPLOYMENT.md           # Step-by-step AWS deployment guide
+├── settings.py             # Loads env vars; validate() called on startup
+├── auth.py                 # OAuth token fetching — disk cache (local) or SSM (Lambda)
 ├── client.py               # Base HTTP request handler
 ├── reservations.py         # Reservation API calls
 ├── guests.py               # Guest API calls
 ├── blocklist_workflow.py   # Batch: scan all guests and flag blocklisted reservations
-└── webhook_server.py       # Real-time: Flask server receiving Guesty webhook events
+└── lambda_handler.py       # Lambda entry point — routes webhook + health events
 ```
 
 ---
@@ -118,7 +122,7 @@ pip install -r requirements.txt
 
 **2. Configure credentials**
 ```bash
-copy .env.example .env
+copy env.example .env
 ```
 Then open `.env` and fill in your values:
 
@@ -126,37 +130,46 @@ Then open `.env` and fill in your values:
 |---|---|
 | `GUESTY_CLIENT_ID` | From Guesty Dashboard → Integrations → API → Open API Keys |
 | `GUESTY_CLIENT_SECRET` | Same location |
-| `GUESTY_WEBHOOK_SECRET` | Set once Guesty provides a signing secret for your endpoint |
-| `WEBHOOK_PORT` | Port for the webhook server (default: `5000`) |
+| `GUESTY_WEBHOOK_SECRET` | Svix signing secret — set after registering your webhook URL with Guesty |
+| `GUESTY_BASE_URL` | Default: `https://open-api.guesty.com` |
+| `GUESTY_TOKEN_URL` | Default: `https://open-api.guesty.com/oauth2/token` |
+| `TOKEN_SSM_PARAM` | SSM parameter name for token cache (default: `/guesty/token_cache`) — Lambda only |
+| `LOG_LEVEL` | Default: `INFO` |
 
-**3. Run the connection test**
+**3. Run the batch workflow locally**
 ```bash
-python main.py
+python blocklist_workflow.py
 ```
 
 ---
 
-## Webhook Server Setup
+## Lambda Deployment
 
-**1. Start the server**
+See `DEPLOYMENT.md` for the full step-by-step guide. Quick reference:
+
+**1. Build**
 ```bash
-python webhook_server.py
+sam build
 ```
 
-**2. Expose it publicly (development)**
-
-Install [ngrok](https://ngrok.com) then run:
+**2. Deploy (first time — guided)**
 ```bash
-ngrok http 5000
+sam deploy --guided
 ```
-Copy the `https://....ngrok.io` URL.
 
-**3. Register the endpoint in Guesty**
+**3. Deploy (subsequent)**
+```bash
+sam deploy
+```
 
-Go to **Guesty Dashboard → Integrations → Webhooks** and add your URL with path `/webhook`:
-```
-https://your-domain.com/webhook
-```
+SAM reads `template.yaml` and creates:
+- A Lambda function (`guesty-webhook`) running `lambda_handler.lambda_handler`
+- An API Gateway with two routes: `POST /webhook` and `GET /health`
+- An SSM parameter (`/guesty/token_cache`) for OAuth token caching
+
+**4. Register the webhook URL in Guesty**
+
+After deployment, SAM outputs your `WebhookUrl`. Go to **Guesty Dashboard → Integrations → Webhooks** and register it.
 
 Subscribe to these four event types:
 
@@ -167,9 +180,9 @@ Subscribe to these four event types:
 | `guest.deleted` | Logs the deletion for audit purposes |
 | `reservation.new` | Flags new bookings from blocklisted guests immediately |
 
-**4. Verify it's running**
+**5. Verify it's running**
 ```
-GET http://localhost:5000/health
+GET https://<api-id>.execute-api.<region>.amazonaws.com/prod/health
 → {"status": "healthy"}
 ```
 
@@ -218,9 +231,15 @@ new_guest = guests.create("Jane Smith", "jane@example.com", "+61400000000")
 
 ## Token Management
 
-- Tokens are cached to disk (`.token_cache.json`) and reused for 24 hours
+Token caching uses two backends depending on environment:
+
+| Environment | Backend | Location |
+|---|---|---|
+| Local dev | Disk | `.token_cache.json` (auto-generated, never commit) |
+| AWS Lambda | SSM Parameter Store | `/guesty/token_cache` (created by `template.yaml`) |
+
 - Auto-refreshes 5 minutes before expiry
-- Guesty limits renewals to **3 per 24 hours** — the disk cache keeps you well within this
+- Guesty limits renewals to **3 per 24 hours** — the cache keeps you well within this limit in both environments
 
 ---
 
