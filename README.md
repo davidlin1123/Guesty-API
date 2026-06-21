@@ -63,7 +63,7 @@ flowchart TD
     G -->|No| H[Skip — log warning]
     G -->|Yes| I[get_reservations\nfetch current + future only\ncheckOut >= today]
     I --> J[For each reservation]
-    J --> K[PUT /v1/reservations/id/custom-fields\nBlacklisted = yes]
+    J --> K[PUT /v1/reservations-v3/id/custom-fields\nBlacklisted = yes]
     K --> L[Automated messages blocked\nby custom field condition]
 ```
 
@@ -77,7 +77,7 @@ flowchart TD
     D --> E[confirm_blocklisted\nGET /v1/guests-crud/id]
     E --> F{Guest has\n'blocklisted' tag?}
     F -->|No| G[No action — clean guest]
-    F -->|Yes| H[PUT /v1/reservations/id/custom-fields\nBlacklisted = yes]
+    F -->|Yes| H[PUT /v1/reservations-v3/id/custom-fields\nBlacklisted = yes]
     H --> I[Automated messages blocked\nbefore access codes go out]
 ```
 
@@ -169,7 +169,7 @@ SAM reads `template.yaml` and creates:
 
 **4. Register the webhook URL in Guesty**
 
-After deployment, SAM outputs your `WebhookUrl`. Go to **Guesty Dashboard → Integrations → Webhooks** and register it.
+After deployment, SAM outputs your `WebhookUrl`. Guesty has no UI for webhook management — registration must be done via API. See `DEPLOYMENT.md` Step 5 for the full PowerShell commands.
 
 Subscribe to these four event types:
 
@@ -190,23 +190,27 @@ GET https://<api-id>.execute-api.<region>.amazonaws.com/prod/health
 
 ## Configuring the Blacklisted Custom Field
 
-In `blocklist_workflow.py`, update `BLACKLIST_CUSTOM_FIELDS_PAYLOAD` to match your exact Guesty custom field name or ID:
+The `BLACKLIST_CUSTOM_FIELDS_PAYLOAD` in `blocklist_workflow.py` is pre-configured with the correct field:
 
 ```python
-# Object format (field name as key):
 BLACKLIST_CUSTOM_FIELDS_PAYLOAD = {
-    "blacklisted": "true",
+    "customFields": [
+        {"fieldId": "64e326bf71323c004cd765ac", "value": True}
+    ]
 }
-
-# Array format (if Guesty uses field IDs):
-BLACKLIST_CUSTOM_FIELDS_PAYLOAD = [
-    {"fieldId": "YOUR_FIELD_ID", "value": "true"}
-]
 ```
 
-To find your field ID, run the batch workflow — it prints current custom fields for each reservation:
-```
-Custom fields for GY-xxxx: [{'fieldId': 'abc123', 'value': '...'}]
+| Field | Value |
+|-------|-------|
+| `fieldId` | `64e326bf71323c004cd765ac` |
+| `displayName` | `blacklisted` |
+| `type` | `boolean` |
+| `object` | `reservation` |
+| API endpoint | `PUT /v1/reservations-v3/{id}/custom-fields` |
+
+To find all account custom field definitions (e.g. if the field ID changes):
+```powershell
+Invoke-RestMethod -Method Get -Uri "https://open-api.guesty.com/v1/accounts/5c6b138eb0d8cc001f20f651/custom-fields" -Headers @{ Authorization = "Bearer $token" } | ConvertTo-Json -Depth 10
 ```
 
 ---

@@ -43,7 +43,9 @@ BLACKLIST_PAYLOAD = {
 #   Object: {"blacklisted": "true"}
 #   Array:  [{"fieldId": "YOUR_FIELD_ID", "value": "true"}]
 BLACKLIST_CUSTOM_FIELDS_PAYLOAD = {
-    "blacklisted": "true",
+    "customFields": [
+        {"fieldId": "64e326bf71323c004cd765ac", "value": True}
+    ]
 }
 
 

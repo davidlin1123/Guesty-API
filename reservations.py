@@ -123,7 +123,7 @@ def get_custom_fields(reservation_id: str) -> dict:
 
 def update_custom_fields(reservation_id: str, payload: dict) -> dict:
     """
-    PUT /v1/reservations/{id}/custom-fields
+    PUT /v1/reservations-v3/{id}/custom-fields
     Update custom fields on a reservation.
     """
-    return make_request("PUT", f"/v1/reservations/{reservation_id}/custom-fields", body=payload)
+    return make_request("PUT", f"/v1/reservations-v3/{reservation_id}/custom-fields", body=payload)

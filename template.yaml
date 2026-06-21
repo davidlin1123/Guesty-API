@@ -25,10 +25,17 @@ Parameters:
     Default: INFO
     AllowedValues: [DEBUG, INFO, WARNING, ERROR]
 
+  AlertEmail:
+    Type: String
+    Default: ""
+    Description: >
+      Email address to notify when Lambda invocations approach the free tier limit.
+      Leave blank to skip email alerts (alarm still fires in CloudWatch).
+
 # ── Globals shared by all functions ───────────────────────────────────────────
 Globals:
   Function:
-    Runtime: python3.12
+    Runtime: python3.13
     Timeout: 30          # Guesty expects a response quickly; heavy work is async
     MemorySize: 256
     Environment:
@@ -40,6 +47,10 @@ Globals:
         GUESTY_TOKEN_URL: "https://open-api.guesty.com/oauth2/token"
         TOKEN_SSM_PARAM: "/guesty/token_cache"
         LOG_LEVEL: !Ref LogLevel
+
+# ── Conditions ────────────────────────────────────────────────────────────────
+Conditions:
+  HasAlertEmail: !Not [!Equals [!Ref AlertEmail, ""]]
 
 # ── Resources ──────────────────────────────────────────────────────────────────
 Resources:
@@ -82,6 +93,44 @@ Resources:
       StageName: prod
       Description: Public HTTPS endpoint for Guesty webhook callbacks
 
+  # ── SNS topic for invocation alarm notifications ─────────────────────────────
+  InvocationAlarmTopic:
+    Type: AWS::SNS::Topic
+    Properties:
+      TopicName: guesty-webhook-invocation-alarm
+      Subscription:
+        !If
+          - HasAlertEmail
+          - - Protocol: email
+              Endpoint: !Ref AlertEmail
+          - !Ref AWS::NoValue
+
+  # ── CloudWatch alarm — free tier safeguard ────────────────────────────────────
+  # Free tier: 1,000,000 requests/month = ~33,333/day.
+  # Alarm fires at 25,000/day (~75% of daily budget) to give time to react.
+  InvocationAlarm:
+    Type: AWS::CloudWatch::Alarm
+    Properties:
+      AlarmName: guesty-webhook-invocations-high
+      AlarmDescription: >
+        Lambda invocations exceeded 25,000 in a 24-hour period.
+        Free tier allows ~33,333/day (1M/month). Investigate for runaway traffic.
+      Namespace: AWS/Lambda
+      MetricName: Invocations
+      Dimensions:
+        - Name: FunctionName
+          Value: !Ref GuestyWebhookFunction
+      Statistic: Sum
+      Period: 86400        # 24 hours
+      EvaluationPeriods: 1
+      Threshold: 25000
+      ComparisonOperator: GreaterThanOrEqualToThreshold
+      TreatMissingData: notBreaching
+      AlarmActions:
+        - !Ref InvocationAlarmTopic
+      OKActions:
+        - !Ref InvocationAlarmTopic
+
   # ── SSM token cache parameter (created empty; auth.py writes to it at runtime) ─
   TokenCacheParam:
     Type: AWS::SSM::Parameter
@@ -106,3 +155,7 @@ Outputs:
   FunctionArn:
     Description: Lambda function ARN
     Value: !GetAtt GuestyWebhookFunction.Arn
+
+  InvocationAlarmName:
+    Description: CloudWatch alarm — fires when daily invocations exceed 25,000 (free tier safeguard)
+    Value: !Ref InvocationAlarm

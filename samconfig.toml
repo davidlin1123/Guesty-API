@@ -1,0 +1,14 @@
+version = 0.1
+
+[default.deploy.parameters]
+stack_name = "guesty-webhook"
+resolve_s3 = true
+s3_prefix = "guesty-webhook"
+region = "us-east-1"
+confirm_changeset = true
+capabilities = "CAPABILITY_IAM"
+parameter_overrides = "GuestyClientId=\"/guesty/client_id\" GuestyClientSecret=\"/guesty/client_secret\" GuestyWebhookSecret=\"/guesty/webhook_secret\" LogLevel=\"INFO\""
+image_repositories = []
+
+[default.global.parameters]
+region = "us-east-1"
